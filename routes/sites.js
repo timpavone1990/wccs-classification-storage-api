@@ -6,7 +6,7 @@ const unirest = require("unirest");
 
 let sites = {};
 
-(function init() {
+(() => {
     let siteNames = [
         "B.A. Bildungswissenschaft",
         "B.A. Kulturwissenschaften mit Fachschwerpunkt Geschichte, Literaturwissenschaft, Philosophie",
@@ -26,6 +26,7 @@ let sites = {};
     ];
 
     let states = ["Analyzing", "Analysed", "In Review", "Waiting", "Approved"];
+    let pageTypes = ["FAQ", "Kontakt", "Aktuelles"];
 
     siteNames.forEach((siteName) => {
         let siteId = siteName
@@ -40,7 +41,8 @@ let sites = {};
         for (let i = 0; i < numberOfPages; i++) {
             let page = {
                 "url": "http://www.fernuni-hagen.de/ksw/" + siteId + "/page" + i,
-                "status": states[Math.floor(Math.random() * 5)]
+                "status": states[Math.floor(Math.random() * 5)],
+                "pageType": pageTypes[Math.floor(Math.random() * 3)]
             };
             pages[page.url.replace(/\//g, "")] = page;
         }
