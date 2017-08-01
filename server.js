@@ -11,6 +11,9 @@ const annotations = require('./routes/annotations');
 const pages = require('./routes/pages');
 const sites = require('./routes/sites');
 
+const unirest = require("unirest");
+const transactionHelper = require("./lib/TransactionHelper");
+
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
@@ -46,4 +49,7 @@ app.use((error, request, response, next) => {
 
 app.listen(52629, function () {
     console.log("Server started...");
+    transactionHelper
+        .writeNode(unirest)
+        .then(() => console.log("Success"), () => console.log("Error"));
 });
