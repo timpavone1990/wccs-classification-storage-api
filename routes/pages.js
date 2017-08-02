@@ -6,8 +6,8 @@ const unirest = require("unirest");
 const pageRepository = new (require("../lib/PageRepository"))(unirest);
 
 router.post('/', (request, response) => {
-    let createPagePromise = pageRepository.createPage(request.body);
-    createPagePromise.then(() => {
+    let storePagePromise = pageRepository.store(request.body);
+    storePagePromise.then(() => {
         response.json({"name": "SUCCESS"});
     }, (error) => {
         console.log(error);
