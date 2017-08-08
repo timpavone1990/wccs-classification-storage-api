@@ -10,6 +10,7 @@ const index = require('./routes/index');
 const annotations = require('./routes/annotations');
 const pages = require('./routes/pages');
 const sites = require('./routes/sites');
+const PORT = 52629;
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -44,6 +45,6 @@ app.use((error, request, response, next) => {
         .json({"error_message": error.message || "Unknown error"});
 });
 
-app.listen(52629, function () {
-    console.log("Server started.");
+app.listen(PORT, function () {
+    console.log(`Server started on port ${PORT}.`);
 });
