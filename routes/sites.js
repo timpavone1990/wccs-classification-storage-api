@@ -3,6 +3,7 @@
 const express = require('express');
 const router = express.Router();
 const unirest = require("unirest");
+const pageRepository = new (require("../lib/PageRepository"))(unirest);
 
 let sites = {};
 
@@ -59,11 +60,25 @@ router.get('/', (request, response) => {
     });
 });
 
-router.get("/:id/pages", (request, response) => {
-    let site = sites[request.params.id];
-    let pagesArray = Object.keys(site.pages).map(pageId => site.pages[pageId]);
-    response.json(pagesArray);
-});
+router.route("/:siteId/pages")
+    .get((request, response) => {
+        let site = sites[request.params.siteId];
+        let pagesArray = Object.keys(site.pages).map(pageId => site.pages[pageId]);
+        response.json(pagesArray);
+    })
+    .post((request, response) => {
+        const startTime = new Date();
+        let storePagePromise = pageRepository.store(request.body, {"name": request.params.siteId});
+        storePagePromise.then(() => {
+            // TODO Set Location header and payload?
+            const duration = new Date() - startTime;
+            response.status(201).end();
+            console.log(`Database request duration: ${duration} ms`);
+        }, (error) => {
+            console.log(error);
+            response.status(500).json({ "error": "Unexpected error. See log for details." });
+        });
+    });
 
 router.get("/:siteId/pages/:pageId", (request, response) => {
     response.json(sites[request.params.siteId].pages[request.params.pageId]);

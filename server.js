@@ -8,7 +8,6 @@ const logger = require('morgan');
 const app = express();
 const index = require('./routes/index');
 const annotations = require('./routes/annotations');
-const pages = require('./routes/pages');
 const sites = require('./routes/sites');
 const PORT = 52629;
 
@@ -28,7 +27,6 @@ app.use((request, response, next) => {
 
 app.use('/', index);
 app.use('/annotations', annotations);
-app.use('/pages', pages);
 app.use('/sites', sites);
 
 /*
