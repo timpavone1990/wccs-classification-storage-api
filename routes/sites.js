@@ -62,18 +62,19 @@ router.get('/', (request, response) => {
 
 router.route("/:siteId/pages")
     .get((request, response) => {
+        console.time("overall");
         let site = sites[request.params.siteId];
         let pagesArray = Object.keys(site.pages).map(pageId => site.pages[pageId]);
         response.json(pagesArray);
+        console.timeEnd("overall");
     })
     .post((request, response) => {
-        const startTime = new Date();
+        console.time("overall");
         let storePagePromise = pageRepository.store(request.body, {"name": request.params.siteId});
         storePagePromise.then(() => {
             // TODO Set Location header and payload?
-            const duration = new Date() - startTime;
             response.status(201).end();
-            console.log(`Database request duration: ${duration} ms`);
+            console.timeEnd("overall");
         }, (error) => {
             console.log(error);
             response.status(500).json({ "error": "Unexpected error. See log for details." });
