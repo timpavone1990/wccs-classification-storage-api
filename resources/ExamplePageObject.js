@@ -166,7 +166,6 @@ module.exports = {
         "my_reference_1": {
             "type": "MyReference1Type",
             "destination": "http://myhost/myfolder/myotherpage1",
-            "isCollection": false,
             "selector": {
                 "type": "RangeSelector",
                 "startSelector": { "type": "XPathSelector", "value": "//table[1]/tr[1]/td[1]","offset": 0 },
@@ -176,7 +175,6 @@ module.exports = {
         "my_reference_2": {
             "type": "MyReference2Type",
             "destination": "http://myhost/myfolder/myotherpage2",
-            "isCollection": false,
             "selector": {
                 "type": "RangeSelector",
                 "startSelector": { "type": "XPathSelector", "value": "//table[2]/tr[2]/td[2]","offset": 0 },
@@ -186,7 +184,6 @@ module.exports = {
         "my_reference_3": {
             "type": "MyReference3Type",
             "destination": "http://myhost/myfolder/myotherpage3",
-            "isCollection": false,
             "selector": {
                 "type": "RangeSelector",
                 "startSelector": { "type": "XPathSelector", "value": "//table[3]/tr[3]/td[3]","offset": 0 },

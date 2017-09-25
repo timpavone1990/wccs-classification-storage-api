@@ -81,6 +81,17 @@ router.route("/:siteId/pages")
         });
     });
 
+router.route("/:siteId/pages/:url")
+    .get(async (request, response) => {
+        try {
+            const page = await pageRepository.getPage(request.params.url);
+            response.json(page);
+        } catch (e) {
+            console.log(e);
+            response.status(500).json({ "error": "Unexpected error. See log for details." });
+        }
+    });
+
 router.get("/:siteId/pages/:pageId", (request, response) => {
     response.json(sites[request.params.siteId].pages[request.params.pageId]);
 });
