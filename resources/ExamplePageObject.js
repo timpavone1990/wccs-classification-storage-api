@@ -31,7 +31,8 @@ module.exports = {
                         "endSelector": { "type": "XPathSelector", "value": "//table[12]/tr[12]/td[122]", "offset": 120 }
                     }
                 }
-            }
+            },
+            "properties": {}
         },
         "my_property_2": {
             "type": "MyProperty2Type",
@@ -68,7 +69,8 @@ module.exports = {
                                 }
                             }
                         }
-                    }
+                    },
+                    "properties": {}
                 },
                 "my_property_2.2": {
                     "type": "MyProperty2.2Type",
@@ -77,7 +79,9 @@ module.exports = {
                         "startSelector": { "type": "XPathSelector", "value": "//p[22]/span[2]/span[22]","offset": 0 },
                         "endSelector": { "type": "XPathSelector", "value": "//p[22]/span[22]/span[222]", "offset": 120 }
                     },
-                    "content": "MyProperty2.2Content"
+                    "content": "MyProperty2.2Content",
+                    "references": {},
+                    "properties": {}
                 },
                 "my_property_2.3": {
                     "type": "MyProperty3Type",
@@ -86,7 +90,9 @@ module.exports = {
                         "startSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[31]","offset": 0 },
                         "endSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[311]", "offset": 120 }
                     },
-                    "content": "MyProperty3Item1Content"
+                    "content": "MyProperty3Item1Content",
+                    "references": {},
+                    "properties": {}
                 }
             },
             "references": {
@@ -140,7 +146,8 @@ module.exports = {
                             }
                         }
                     ]
-                }
+                },
+                "properties": {}
             },
             {
                 "type": "MyProperty3Type",
@@ -150,7 +157,8 @@ module.exports = {
                     "endSelector": { "type": "XPathSelector", "value": "//p[32]/span[32]/span[322]", "offset": 120 }
                 },
                 "content": "MyProperty3Item2Content",
-                "references": {}
+                "references": {},
+                "properties": {}
             }
         ]
     },
