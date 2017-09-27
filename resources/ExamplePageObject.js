@@ -128,21 +128,21 @@ module.exports = {
                 "references": {
                     "my_reference_3Item1": [
                         {
-                            "type": "MyReference3Item1.2Type",
-                            "destination": "http://myhost/myfolder/myotherpage3#1.2",
-                            "selector": {
-                                "type": "RangeSelector",
-                                "startSelector": { "type": "XPathSelector", "value": "//table[312]/tr[312]/td[312]","offset": 0 },
-                                "endSelector": { "type": "XPathSelector", "value": "//table[312]/tr[312]/td[3122]", "offset": 120 }
-                            }
-                        },
-                        {
                             "type": "MyReference3Item1.1Type",
                             "destination": "http://myhost/myfolder/myotherpage3#1.1",
                             "selector": {
                                 "type": "RangeSelector",
                                 "startSelector": { "type": "XPathSelector", "value": "//table[311]/tr[311]/td[311]","offset": 0 },
                                 "endSelector": { "type": "XPathSelector", "value": "//table[311]/tr[311]/td[3111]", "offset": 120 }
+                            }
+                        },
+                        {
+                            "type": "MyReference3Item1.2Type",
+                            "destination": "http://myhost/myfolder/myotherpage3#1.2",
+                            "selector": {
+                                "type": "RangeSelector",
+                                "startSelector": { "type": "XPathSelector", "value": "//table[312]/tr[312]/td[312]","offset": 0 },
+                                "endSelector": { "type": "XPathSelector", "value": "//table[312]/tr[312]/td[3122]", "offset": 120 }
                             }
                         }
                     ]
