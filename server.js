@@ -6,9 +6,8 @@ const express = require('express');
 const logger = require('morgan');
 
 const app = express();
-const index = require('./routes/index');
-const annotations = require('./routes/annotations');
 const sites = require('./routes/sites');
+const pages = require('./routes/pages');
 const PORT = 52629;
 
 app.use(logger('dev'));
@@ -25,9 +24,8 @@ app.use((request, response, next) => {
     next();
 });
 
-app.use('/', index);
-app.use('/annotations', annotations);
 app.use('/sites', sites);
+app.use('/pages', pages);
 
 /*
  * Handle not found error

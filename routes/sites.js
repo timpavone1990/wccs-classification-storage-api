@@ -61,13 +61,6 @@ router.get('/', (request, response) => {
 });
 
 router.route("/:siteId/pages")
-    .get((request, response) => {
-        console.time("overall");
-        let site = sites[request.params.siteId];
-        let pagesArray = Object.keys(site.pages).map(pageId => site.pages[pageId]);
-        response.json(pagesArray);
-        console.timeEnd("overall");
-    })
     .post((request, response) => {
         console.time("overall");
         let storePagePromise = pageRepository.store(request.body, {"name": request.params.siteId});
