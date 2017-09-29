@@ -1,6 +1,7 @@
 module.exports = {
     "type": "Service",
     "url": "http://www.fernuni-hagen.de/KSW/portale/babw/service/",
+    "status": "Classified",
     "properties": {
         "header": {
             "type": "Header",

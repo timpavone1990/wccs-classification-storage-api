@@ -3,6 +3,7 @@
 module.exports = {
     "url": "http://myhost/myfolder/mypage",
     "type": "MyPageType",
+    "status": "Classified",
     "properties": {
         "my_property_1": {
             "type": "MyProperty1Type",
