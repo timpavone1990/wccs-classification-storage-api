@@ -63,7 +63,7 @@ router.get('/', (request, response) => {
 router.route("/:siteId/pages")
     .post((request, response) => {
         console.time("overall");
-        let storePagePromise = pageRepository.store(request.body, {"name": request.params.siteId});
+        let storePagePromise = pageRepository.store(request.body, {"id": request.params.siteId});
         storePagePromise.then(() => {
             // TODO Set Location header and payload?
             response.status(201).end();
