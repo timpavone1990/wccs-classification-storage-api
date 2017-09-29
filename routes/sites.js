@@ -18,6 +18,15 @@ router.get('/', async (request, response, next) => {
 });
 
 router.route("/:siteId/pages")
+    .get(async (request, response, next) => {
+        try {
+            const pages = await pageRepository.getSitePages(request.params.siteId);
+            response.json({"total": pages.length, "pages": pages});
+        } catch (e) {
+            logger.error(e.message);
+            next(e);
+        }
+    })
     .post((request, response) => {
         console.time("overall");
         let storePagePromise = pageRepository.store(request.body, {"id": request.params.siteId});
@@ -41,9 +50,5 @@ router.route("/:siteId/pages/:url")
             response.status(500).json({ "error": "Unexpected error. See log for details." });
         }
     });
-
-router.get("/:siteId/pages/:pageId", (request, response) => {
-    response.json(sites[request.params.siteId].pages[request.params.pageId]);
-});
 
 module.exports = router;
