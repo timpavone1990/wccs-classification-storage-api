@@ -12,15 +12,15 @@
   "dependencies": {
     "body-parser": "~1.17.1",
     "cookie-parser": "~1.4.3",
-    "express": "~4.15.2",
-    "jsesc": "^2.5.1",
+    "express": "^4.16.0",
     "morgan": "~1.8.1",
     "object-hash": "^1.1.8",
-    "unirest": "^0.5.1"
+    "unirest": "^0.5.1",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
-    "chai": "^4.0.2",
-    "mocha": "^3.4.2",
-    "sinon": "^2.3.3"
+    "chai": "^4.1.2",
+    "mocha": "^3.5.3",
+    "sinon": "^2.4.1"
   }
 }
