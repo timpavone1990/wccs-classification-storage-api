@@ -15,6 +15,15 @@ router.route("/:url")
             console.log(e);
             response.status(500).json({ "error": "Unexpected error. See log for details." });
         }
+    })
+    .put(async (request, response) => {
+        try {
+            await pageRepository.update(request.body);
+            response.status(204).end();
+        } catch (e) {
+            console.log(e);
+            response.status(500).json({ "error": "Unexpected error. See log for details." });
+        }
     });
 
 module.exports = router;
