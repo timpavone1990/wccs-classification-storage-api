@@ -3,100 +3,6 @@ module.exports = {
     "url": "http://www.fernuni-hagen.de/KSW/portale/babw/service/",
     "status": "Classified",
     "properties": {
-        "header": {
-            "type": "Header",
-            "selector": {
-                "type": "RangeSelector",
-                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]", "offset": 0 },
-                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]", "offset": 43 }
-            },
-            "properties": {
-                "fernUni": {
-                    "type": "Brand",
-                    "selector": {
-                        "type": "RangeSelector",
-                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 },
-                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 }
-                    },
-                    "references": {
-                        "homepage": {
-                            "type": "FernUniInternalLink",
-                            "destination": "http://www.fernuni-hagen.de/",
-                            "selector": {
-                                "type": "RangeSelector",
-                                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 },
-                                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 }
-                            }
-                        },
-                        "logo": {
-                            "type": "Image",
-                            "destination": "service_files/feulogo.png",
-                            "selector": {
-                                "type": "RangeSelector",
-                                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]/img[1]", "offset": 0 },
-                                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]/img[1]", "offset": 0 }
-                            }
-                        }
-                    },
-                    "properties": {}
-                }
-            },
-            "references": {}
-        },
-        "portal": {
-            "type": "Portal",
-            "content": "B.A. Bildungswissenschaft",
-            "selector": {
-                "type": "RangeSelector",
-                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 0 },
-                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 25 }
-            },
-            "references": {
-                "homepage": {
-                    "type": "FernUniInternalLink",
-                    "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/",
-                    "selector": {
-                        "type": "RangeSelector",
-                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 0 },
-                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 25 }
-                    }
-                }
-            },
-            "properties": {}
-        },
-        "heading": {
-            "type": "PageHeading",
-            "content": "Service",
-            "selector": {
-                "type": "RangeSelector",
-                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h3[1]","offset": 0 },
-                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h3[1]", "offset": 7 }
-            },
-            "properties": {},
-            "references": {}
-        },
-        "subHeading": {
-            "type": "SectionHeading",
-            "content": "Fragen und Antworten zum B.A. Bildungswissenschaft (F.A.Q.s)",
-            "selector": {
-                "type": "RangeSelector",
-                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h4[1]", "offset": 0 },
-                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h4[1]", "offset": 60 }
-            },
-            "properties": {},
-            "references": {}
-        },
-        "introduction": {
-            "type": "Text",
-            "content": "Viele Fragen zum B.A. Bildungswissenschaft klären sich durch die Lektüre dieser FAQs! Bitte machen Sie zunächst von diesem Angebot Gebrauch, bevor Sie sich an die Studienberatung wenden.\n(Stand: 06/2015)",
-            "selector": {
-                "type": "RangeSelector",
-                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/p[1]", "offset": 0 },
-                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/p[1]", "offset": 203 }
-            },
-            "properties": {},
-            "references": {}
-        },
         "closing": {
             "type": "Text",
             "content": "Wurden Ihre Fragen beantwortet?\nFalls nicht, sprechen Sie uns bitte an. Sie finden Ihre Ansprechpartnerin/Ihren Ansprechpartner unter Kontakt.",
@@ -121,450 +27,6 @@ module.exports = {
             }
         },
         "faqSections": [
-            {
-                "type": "FAQSection",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]", "offset": 10 }
-                },
-                "properties": {
-                    "title": {
-                        "type": "SectionHeading",
-                        "content": "Prüfungen",
-                        "selector": {
-                            "type": "RangeSelector",
-                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/h4[1]", "offset": 0 },
-                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/h4[1]", "offset": 9 }
-                        },
-                        "properties": {},
-                        "references": {}
-                    },
-                    "entries": [
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Was sind ePortfolios? Sind das Prüfungsleistungen?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 50,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Mit ePortfolios werden Produkte mit Hilfe elektronischer Medien gesammelt und archiviert. Dies kann z.B. ein Weblog, eine Präsentation oder Html-Seite sein. ePortfolios dienen dazu, dass Sie Ihre Leistungen und Kompetenzen selbst dokumentieren, die Sie in diesem Studium erworben haben. In dem Portfolio dokumentieren Sie beispielsweise Ihre Hausarbeit. Prüfungsleistungen im BA Bildungswissenschaft sind generell Hausarbeiten, Klausuren und mündliche Prüfungen. EPortfolios sind in diesem Sinne keine Prüfungsleistungen.\nKontinuierlich eingesetzt dokumentieren Portfolios nicht nur eine Momentaufnahme, sondern Ihren gesamten Lernprozess. Sie begleiten Studierende in ihrer Lernkarriere. Portfolios demonstrieren Kompetenzen und sind daher als Demonstrationsobjekte (Schaustücke) sowohl für den Bildungsprozess (z.B. Übertritt von einer Bildungsinstitution in eine andere) als auch für die (zukünftigen) Arbeitgeber (z.B. bei Bewerbungsgesprächen) interessant. Weil Portfolios den Lernprozess dokumentieren (und nicht nur eine erbrachte Leistung), sind sie auch für die kritische Reflexion des eigenen Lernprozesses geeignet und können damit die Herausbildung der Kompetenz des selbstorganisierten Lernens fördern.\nAllerdings werden wir im BA das kontinuierliche Führen von ePortfolios nicht verpflichtend machen, sondern ihren Einsatz in verschiedenen Modulen für die Reflexion der erworbenen Kenntnisse und Fähigkeiten anregen. Im anschließenden Master-Studiengang eEducation sollen ePortfolios dagegen konsequent über die Semester geführt werden.\n\n",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 1552,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQAnswer"
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 51,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        },
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Wie funktioniert das mit den Klausuren?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 39,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Das Bedürfnis nach Klausurinformationen ist verständlicherweise recht groß. Sie erhalten daher in den einzelnen Modulen im Laufe des Semesters hinreichende Informationen, die auf eventuelle Schwerpunktsetzungen oder Stoffeingrenzungen hinweisen. Achten Sie darauf, dass die Informationen aktuell sind und nicht möglicherweise aus vorherigen Semestern und damit veraltet sind. Zur Prüfungsvorbereitung können Sie sich mit den Modulbetreuerinnen und -betreuern über die inhaltsbezogenen Aufgaben und Übungen insbesondere in der Lernumgebung moodle austauschen.\n\n \n\n",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 563,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQAnswer"
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 40,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        },
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Darf ich eine Hausarbeit frankiert mit einer Internetmarke verschicken?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 71,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Eine Hausarbeit ist fristgemäß im Prüfungsamt einzureichen. Die Einhaltung der festgelegten Abgabefrist wird durch den Poststempel nachgewiesen. Bei Internetmarken sind Entgelt, Erstellungsmonat und -jahr aufgedruckt. Die Entwertung von Internetmarken erfolgt nicht durch einen Poststempel. Weil der Poststempel auf Internetmarken i.d.R. fehlt, kann auch nicht die fristgerechte Abgabe nachgewiesen werden. Aus diesem Grund ist die Verwendung von Internetmarken nicht geeignet.\n\n",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 479,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQAnswer"
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 72,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        }
-                    ]
-                },
-                "references": {}
-            },
-            {
-                "type": "FAQSection",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]", "offset": 19 }
-                },
-                "properties": {
-                    "title": {
-                        "content": "BA-Abschlussarbeit",
-                        "type": "SectionHeading",
-                        "selector": {
-                            "type": "RangeSelector",
-                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[1]/h4[1]", "offset": 0 },
-                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[1]/h4[1]", "offset": 18 }
-                        },
-                        "properties": {},
-                        "references": {}
-                    },
-                    "entries": [
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Was ist das „Diploma Supplement“?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 33,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Hierzu schreibt das Bologna-Zentrum der Hochschulrektorenkonferenz auf ihrer Internetseite:\n„Das „Diploma Supplement“ (DS) ist ein Text mit einheitlichen Angaben zur Beschreibung von Hochschulabschlüssen und damit verbundener Qualifikationen. Als ergänzende Information zu den offiziellen Dokumenten über Hochschulabschlüsse (Verleihungs-Urkunden, Prüfungs-Zeugnisse) soll es – international und auch national – die Bewertung und Einstufung von akademischen Abschlüssen sowohl für Studien- als auch für Berufszwecke erleichtern und verbessern.“\n\n",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 546,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQAnswer"
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 34,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        },
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Wie ist das Verfahren bei der B.A.-Abschlussarbeit?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 51,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Sie können die Bachelor-Arbeit (z.B. per E-Mail) beim Prüfungsamt der Fakultät für Kultur- und Sozialwissenschaften anmelden, indem Sie einen formlosen Antrag auf Zulassung stellen. Alle Informationen finden Sie in diesem Dokument.\nDie Richtlinien zur „B.A. Abschlussarbeit“ sind im § 16 der Studienordnung festgelegt. Sie können die Studienordnung hier nachlesen. Der B.A.-Themenstellung wird ein „Beipackzettel“ mit Hinweisen über die B.A.-Arbeit beigefügt.\n\n",
-                                    "properties": {},
-                                    "references": {
-                                        "fernUniLinks": [
-                                            {
-                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/wp-content/uploads/sites/3/2015/06/Hinweise-zur-B.A.-Arbeit.pdf",
-                                                "selector": {
-                                                    "endSelector": {
-                                                        "offset": 15,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
-                                                    },
-                                                    "startSelector": {
-                                                        "offset": 0,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
-                                                    },
-                                                    "type": "RangeSelector"
-                                                },
-                                                "type": "FernUniInternalLink"
-                                            },
-                                            {
-                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/wp-content/uploads/sites/3/2015/06/sto_babw.pdf",
-                                                "selector": {
-                                                    "endSelector": {
-                                                        "offset": 4,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[2]"
-                                                    },
-                                                    "startSelector": {
-                                                        "offset": 0,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[2]"
-                                                    },
-                                                    "type": "RangeSelector"
-                                                },
-                                                "type": "FernUniInternalLink"
-                                            },
-                                            {
-                                                "destination": "http://www.fernuni-hagen.de/KSW/download/formulare/Beipackzettel-BA-MA-Arbeiten.pdf",
-                                                "selector": {
-                                                    "endSelector": {
-                                                        "offset": 15,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[3]"
-                                                    },
-                                                    "startSelector": {
-                                                        "offset": 0,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[3]"
-                                                    },
-                                                    "type": "RangeSelector"
-                                                },
-                                                "type": "FernUniInternalLink"
-                                            }
-                                        ]
-                                    },
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 461,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQAnswer"
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 52,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        },
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Darf ich eine Abschlussarbeit frankiert mit einer Internetmarke verschicken?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 76,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Eine Abschlussarbeit ist fristgemäß im Prüfungsamt einzureichen. Die Einhaltung der festgelegten Abgabefrist wird durch den Poststempel nachgewiesen. Bei Internetmarken sind Entgelt, Erstellungsmonat und -jahr aufgedruckt. Die Entwertung von Internetmarken erfolgt nicht durch einen Poststempel. Weil der Poststempel auf Internetmarken i.d.R. fehlt, kann auch nicht die fristgerechte Abgabe nachgewiesen werden. Aus diesem Grund ist die Verwendung von Internetmarken nicht geeignet.\n\n",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 484,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
-                                        },
-                                        "type": "RangeSelector"
-                                    },
-                                    "type": "FAQAnswer"
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 77,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        }
-                    ]
-                },
-                "references": {}
-            },
             {
                 "type": "FAQSection",
                 "selector": {
@@ -687,6 +149,496 @@ module.exports = {
                                 }
                             },
                             "references": {}
+                        }
+                    ]
+                },
+                "references": {}
+            },
+            {
+                "type": "FAQSection",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]", "offset": 23 }
+                },
+                "properties": {
+                    "title": {
+                        "type": "SectionHeading",
+                        "content": "Berufsfeldorientierung",
+                        "selector": {
+                            "type": "RangeSelector",
+                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/h4[1]", "offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/h4[1]", "offset": 22 }
+                        },
+                        "properties": {},
+                        "references": {}
+                    },
+                    "entries": [
+                        {
+                            "type": "FAQEntry",
+                            "selector": {
+                                "type": "RangeSelector",
+                                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]", "offset": 152 },
+                                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]", "offset": 0 }
+                            },
+                            "properties": {
+                                "question": {
+                                    "type": "FAQQuestion",
+                                    "content": "Was fange ich nach dem Studium mit dem Abschluss“Bachelor of Arts“ in Bildungswissenschaft an? Welche Berufsaussichten habe ich mit diesem Studiengang?",
+                                    "selector": {
+                                        "type": "RangeSelector",
+                                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 0 },
+                                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 151 }
+                                    },
+                                    "properties": {},
+                                    "references": {}
+                                },
+                                "answer": {
+                                    "type": "FAQAnswer",
+                                    "content": "Der Studiengang bereitet Sie auf Tätigkeiten in öffentlichen und privaten Organisationen und Institutionen im Bereich der Grundlagenforschung, der Konzeptualisierung, der Organisation, Durchführung und Evaluation von Bildungsprozessen sowie mediatisierten Kommunikationsabläufen vor.\nDiese Kompetenzen werden benötigt in Institutionen der allgemeinen und beruflichen Aus- und Weiterbildung, Einrichtungen der Erwachsenen- und politischen Bildung, Personalentwicklung in Unternehmen, Kammern, Arbeitsverwaltung und Verbänden, Bildungsmanagement, -beratung und -forschung, Fördereinrichtungen und in Organisationen der bi- und multilateralen Bildungs- und Berufsbildungszusammenarbeit.\nDer Bachelorstudiengang Bildungswissenschaft ist für all diejenigen gedacht, die in der Bildung und Ausbildung von jungen Menschen und Erwachsenen, in Personalmanagement und Arbeitsverwaltung, in Bildungsverwaltung und -forschung oder als (Unternehmens-)Berater tätig sind oder sein wollen. Nach dem Studium sollen die Absolventen und Absolventinnen in der Lage sein, als Bildungspersonal in verschiedenen beruflichen Kontexten tätig zu werden.\n\n",
+                                    "selector": {
+                                        "type": "RangeSelector",
+                                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]", "offset": 0 },
+                                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]", "offset": 1130 }
+                                    },
+                                    "properties": {},
+                                    "references": {}
+                                }
+                            },
+                            "references": {}
+                        }
+                    ]
+                },
+                "references": {}
+            },
+            {
+                "type": "FAQSection",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]", "offset": 26 }
+                },
+                "properties": {
+                    "title": {
+                        "type": "SectionHeading",
+                        "content": "Zulassungsvoraussetzungen",
+                        "selector": {
+                            "type": "RangeSelector",
+                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/h4[1]", "offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/h4[1]", "offset": 25 }
+                        },
+                        "properties": {},
+                        "references": {}
+                    },
+                    "entries": [
+                        {
+                            "properties": {
+                                "question": {
+                                    "type": "FAQQuestion",
+                                    "content": "Ich habe keine Hochschulreife, möchte aber gerne den B.A. Bildungswissenschaft studieren. Ist das möglich?",
+                                    "selector": {
+                                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 106 },
+                                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 0 },
+                                        "type": "RangeSelector"
+                                    },
+                                    "properties": {},
+                                    "references": {}
+                                },
+                                "answer": {
+                                    "type": "FAQAnswer",
+                                    "content": "Kein Problem. Beruflich Qualifizierte haben die Möglichkeit, ein Probestudium an der FernUniversität aufzunehmen. Sie studieren im Probestudium gemäß dem Studienplan als Vollzeit- oder Teilzeitstudierender und legen die vorgesehenen Prüfungen ab. Das Probestudium im Bachelorstudiengang Bildungswissenschaft gilt als erfolgreich abgeschlossen, wenn Sie nach mindestens vier und maximal acht Semestern mindestens 6 Module (entspricht 90 ECTS) bestanden haben. Eine weitere Möglichkeit den Hochschulzugang zu erlangen, besteht über das Absolvieren einer Zugangsprüfung. Sie besteht aus zwei Klausuren, mit denen allgemeine und für den jeweiligen Studiengang erforderliche Kenntnisse überprüft werden. Wenn Ihre Qualifikation als fachlich entsprechend eingestuft wurde und Sie zusätzlich eine mind. 3-jährige Berufspraxis in diesem Ausbildungsberuf nachweisen, ist eine direkte Einschreibung (ohne Probestudium oder Zugangsprüfung) in den Studiengang möglich. Dies gilt derzeit für diese Ausbildungsberufe. \n\n",
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 1006,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "properties": {},
+                                    "references": {
+                                        "fernUniLinks": [
+                                            {
+                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/",
+                                                "selector": {
+                                                    "endSelector": {
+                                                        "offset": 23,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[1]/a[1]"
+                                                    },
+                                                    "startSelector": {
+                                                        "offset": 0,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[1]/a[1]"
+                                                    },
+                                                    "type": "RangeSelector"
+                                                },
+                                                "type": "FernUniInternalLink"
+                                            },
+                                            {
+                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/probestudium.shtml",
+                                                "selector": {
+                                                    "endSelector": {
+                                                        "offset": 12,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[2]/a[1]"
+                                                    },
+                                                    "startSelector": {
+                                                        "offset": 0,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[2]/a[1]"
+                                                    },
+                                                    "type": "RangeSelector"
+                                                },
+                                                "type": "FernUniInternalLink"
+                                            },
+                                            {
+                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/zugangspruefung.shtml",
+                                                "selector": {
+                                                    "endSelector": {
+                                                        "offset": 14,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[3]/a[1]"
+                                                    },
+                                                    "startSelector": {
+                                                        "offset": 0,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[3]/a[1]"
+                                                    },
+                                                    "type": "RangeSelector"
+                                                },
+                                                "type": "FernUniInternalLink"
+                                            },
+                                            {
+                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/fachliche_eignung.shtml",
+                                                "selector": {
+                                                    "endSelector": {
+                                                        "offset": 23,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[4]/a[1]"
+                                                    },
+                                                    "startSelector": {
+                                                        "offset": 0,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[4]/a[1]"
+                                                    },
+                                                    "type": "RangeSelector"
+                                                },
+                                                "type": "FernUniInternalLink"
+                                            }
+                                        ]
+                                    }
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 107,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
+                        },
+                        {
+                            "properties": {
+                                "question": {
+                                    "content": "Benötige ich gute Englisch-Kenntnisse? Und sind die Materialien in Deutsch oder in Englisch?",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 92,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Die Materialien in Form von Studienbriefen sind in diesem Studiengang in deutscher Sprache verfasst. Wenn allerdings Zusatzmaterialien aus dem Internet herangezogen werden, kann es natürlich sein, dass es sich auch um englischsprachige Artikel handelt. Aus diesem Grund sind Grundkenntnisse der englischen Sprache von Vorteil.\n\n",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 328,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQAnswer"
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 93,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
+                        },
+                        {
+                            "properties": {
+                                "question": {
+                                    "content": "Muss ich einen Deutschtest machen?",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 34,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Wenn Sie Ihre Studienqualifikation nicht an einer deutschsprachigen Einrichtung erworben haben, müssen Sie bei der Einschreibung einen anerkannten Nachweis Ihrer Deutschkenntnisse vorlegen. Einen Deutschtest können Sie an der FernUniversität in Hagen absolvieren, aber auch an anderen Unis oder im Goethe-Institut. Nähere Informationen erteilt Ihnen das Studierendensekretariat.\n\n",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 380,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQAnswer"
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 35,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
+                        },
+                        {
+                            "properties": {
+                                "question": {
+                                    "content": "Welche technische Ausstattung benötige ich?",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 43,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/h6[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/h6[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Neben einem Computer mit herkömmlicher Software – Office-Anwendungen, aktuellem Webbrowser, Adobe Acrobat Reader – ist ein Internetzugang erforderlich. Sowohl für den Computer als auch für den Internetzugang gilt: Je schneller bzw. leistungsfähiger, desto besser.\nZu Beginn des Studiums benötigen Sie Kenntnisse im Umgang mit eMail und Internetrecherchen. Hilfreich sind Kenntnisse in der Nutzung synchroner und asynchroner Kommunikationsformen. Im Laufe des Studiengangs lernen Sie diese zunehmend kennen.\n\n \n\n",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 511,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQAnswer"
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 44,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
+                        }
+                    ]
+                },
+                "references": {}
+            },
+            {
+                "type": "FAQSection",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]", "offset": 14 }
+                },
+                "properties": {
+                    "title": {
+                        "content": "Anerkennungen",
+                        "type": "SectionHeading",
+                        "selector": {
+                            "type": "RangeSelector",
+                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/h4[1]", "offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/h4[1]", "offset": 13 }
+                        },
+                        "properties": {},
+                        "references": {}
+                    },
+                    "entries": [
+                        {
+                            "properties": {
+                                "question": {
+                                    "content": "Werden mir Module aus anderen Studiengängen anerkannt?",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 54,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Module aus anderen Studiengängen können anerkannt werden, sofern sie mit den Inhalten der B.A.-Module übereinstimmen. Haben Sie an einer anderen Universität bereits Module in der Bildungswissenschaft absolviert, können diese nach Überprüfung anerkannt werden. Da sich die Modulprüfungen auf alle verbindlichen Inhalte des Moduls beziehen, können nur ganze Module anerkannt werden, keine Teilleistungen. Bedauerlicherweise können auch keine Prüfungsleistungen aus dem Bachelor Kulturwissenschaften oder dem Bachelor Politik und Organisation anerkannt werden, da sie inhaltlich ganz anders ausgerichtet sind. Allerdings kann das dort abgeleistete Praktikum angerechnet werden. Weitere Informationen finden Sie unter „Anerkennungen„.\n\nAnerkennungen aus Magister-/Diplom- oder Lehramtsstudiengängen können i.d.R. nicht auf die Bachelorstudiengänge angerechnet werden. Das liegt an der Modularisierung des Studiengangs: Statt Leistungsnachweise und Blockprüfungen (Zwischen- und Abschlussprüfungen) wird jetzt jedes Modul durch eine Prüfungsleistung abgeschlossen. Die Summe dieser Prüfungsleistungen ergibt dann den Abschluss „Bachelor of Arts Bildungswissenschaft“. Deshalb ist eine Vergleichbarkeit mit den vorgenannten Studiengängen bzw. -leistungen nicht gegeben. Hier gilt die Regelung: Wer bereits das Vordiplom oder die Zwischenprüfung im Hauptfach Erziehungswissenschaft erfolgreich abgelegt hat, bekommt das Modul 1A des B.A. Bildungswissenschaft bei Vorlage einer beglaubigten Kopie des entsprechenden Zeugnisses anerkannt. \n\nWeitere Informationen zu Anerkennungen und die entsprechenden Formulare finden Sie hier.\n\n \n\n",
+                                    "properties": {},
+                                    "references": {
+                                        "fernUniLinks": [
+                                            {
+                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/einstieg/anerkennung-bereits-erbrachter-studien-und-pruefungsleistungen/",
+                                                "selector": {
+                                                    "endSelector": {
+                                                        "offset": 13,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
+                                                    },
+                                                    "startSelector": {
+                                                        "offset": 0,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
+                                                    },
+                                                    "type": "RangeSelector"
+                                                },
+                                                "type": "FernUniInternalLink"
+                                            },
+                                            {
+                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/einstieg/anerkennung-bereits-erbrachter-studien-und-pruefungsleistungen/",
+                                                "selector": {
+                                                    "endSelector": {
+                                                        "offset": 4,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[3]/a[1]"
+                                                    },
+                                                    "startSelector": {
+                                                        "offset": 0,
+                                                        "type": "XPathSelector",
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[3]/a[1]"
+                                                    },
+                                                    "type": "RangeSelector"
+                                                },
+                                                "type": "FernUniInternalLink"
+                                            }
+                                        ]
+                                    },
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 1625,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQAnswer"
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 55,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
                         }
                     ]
                 },
@@ -1333,17 +1285,17 @@ module.exports = {
                 "type": "FAQSection",
                 "selector": {
                     "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]", "offset": 14 }
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]", "offset": 10 }
                 },
                 "properties": {
                     "title": {
-                        "content": "Anerkennungen",
                         "type": "SectionHeading",
+                        "content": "Prüfungen",
                         "selector": {
                             "type": "RangeSelector",
-                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/h4[1]", "offset": 0 },
-                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[1]/h4[1]", "offset": 13 }
+                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/h4[1]", "offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/h4[1]", "offset": 9 }
                         },
                         "properties": {},
                         "references": {}
@@ -1352,75 +1304,38 @@ module.exports = {
                         {
                             "properties": {
                                 "question": {
-                                    "content": "Werden mir Module aus anderen Studiengängen anerkannt?",
+                                    "content": "Wie funktioniert das mit den Klausuren?",
                                     "properties": {},
                                     "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 54,
+                                            "offset": 39,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
                                     "type": "FAQQuestion"
                                 },
                                 "answer": {
-                                    "content": "Module aus anderen Studiengängen können anerkannt werden, sofern sie mit den Inhalten der B.A.-Module übereinstimmen. Haben Sie an einer anderen Universität bereits Module in der Bildungswissenschaft absolviert, können diese nach Überprüfung anerkannt werden. Da sich die Modulprüfungen auf alle verbindlichen Inhalte des Moduls beziehen, können nur ganze Module anerkannt werden, keine Teilleistungen. Bedauerlicherweise können auch keine Prüfungsleistungen aus dem Bachelor Kulturwissenschaften oder dem Bachelor Politik und Organisation anerkannt werden, da sie inhaltlich ganz anders ausgerichtet sind. Allerdings kann das dort abgeleistete Praktikum angerechnet werden. Weitere Informationen finden Sie unter „Anerkennungen„.\n\nAnerkennungen aus Magister-/Diplom- oder Lehramtsstudiengängen können i.d.R. nicht auf die Bachelorstudiengänge angerechnet werden. Das liegt an der Modularisierung des Studiengangs: Statt Leistungsnachweise und Blockprüfungen (Zwischen- und Abschlussprüfungen) wird jetzt jedes Modul durch eine Prüfungsleistung abgeschlossen. Die Summe dieser Prüfungsleistungen ergibt dann den Abschluss „Bachelor of Arts Bildungswissenschaft“. Deshalb ist eine Vergleichbarkeit mit den vorgenannten Studiengängen bzw. -leistungen nicht gegeben. Hier gilt die Regelung: Wer bereits das Vordiplom oder die Zwischenprüfung im Hauptfach Erziehungswissenschaft erfolgreich abgelegt hat, bekommt das Modul 1A des B.A. Bildungswissenschaft bei Vorlage einer beglaubigten Kopie des entsprechenden Zeugnisses anerkannt. \n\nWeitere Informationen zu Anerkennungen und die entsprechenden Formulare finden Sie hier.\n\n \n\n",
+                                    "content": "Das Bedürfnis nach Klausurinformationen ist verständlicherweise recht groß. Sie erhalten daher in den einzelnen Modulen im Laufe des Semesters hinreichende Informationen, die auf eventuelle Schwerpunktsetzungen oder Stoffeingrenzungen hinweisen. Achten Sie darauf, dass die Informationen aktuell sind und nicht möglicherweise aus vorherigen Semestern und damit veraltet sind. Zur Prüfungsvorbereitung können Sie sich mit den Modulbetreuerinnen und -betreuern über die inhaltsbezogenen Aufgaben und Übungen insbesondere in der Lernumgebung moodle austauschen.\n\n \n\n",
                                     "properties": {},
-                                    "references": {
-                                        "fernUniLinks": [
-                                            {
-                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/einstieg/anerkennung-bereits-erbrachter-studien-und-pruefungsleistungen/",
-                                                "selector": {
-                                                    "endSelector": {
-                                                        "offset": 13,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
-                                                    },
-                                                    "startSelector": {
-                                                        "offset": 0,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
-                                                    },
-                                                    "type": "RangeSelector"
-                                                },
-                                                "type": "FernUniInternalLink"
-                                            },
-                                            {
-                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/einstieg/anerkennung-bereits-erbrachter-studien-und-pruefungsleistungen/",
-                                                "selector": {
-                                                    "endSelector": {
-                                                        "offset": 4,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[3]/a[1]"
-                                                    },
-                                                    "startSelector": {
-                                                        "offset": 0,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[3]/a[1]"
-                                                    },
-                                                    "type": "RangeSelector"
-                                                },
-                                                "type": "FernUniInternalLink"
-                                            }
-                                        ]
-                                    },
+                                    "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 1625,
+                                            "offset": 563,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
@@ -1430,14 +1345,128 @@ module.exports = {
                             "references": {},
                             "selector": {
                                 "endSelector": {
-                                    "offset": 55,
+                                    "offset": 40,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]"
                                 },
                                 "startSelector": {
                                     "offset": 0,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[5]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[1]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
+                        },
+                        {
+                            "properties": {
+                                "question": {
+                                    "content": "Was sind ePortfolios? Sind das Prüfungsleistungen?",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 50,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Mit ePortfolios werden Produkte mit Hilfe elektronischer Medien gesammelt und archiviert. Dies kann z.B. ein Weblog, eine Präsentation oder Html-Seite sein. ePortfolios dienen dazu, dass Sie Ihre Leistungen und Kompetenzen selbst dokumentieren, die Sie in diesem Studium erworben haben. In dem Portfolio dokumentieren Sie beispielsweise Ihre Hausarbeit. Prüfungsleistungen im BA Bildungswissenschaft sind generell Hausarbeiten, Klausuren und mündliche Prüfungen. EPortfolios sind in diesem Sinne keine Prüfungsleistungen.\nKontinuierlich eingesetzt dokumentieren Portfolios nicht nur eine Momentaufnahme, sondern Ihren gesamten Lernprozess. Sie begleiten Studierende in ihrer Lernkarriere. Portfolios demonstrieren Kompetenzen und sind daher als Demonstrationsobjekte (Schaustücke) sowohl für den Bildungsprozess (z.B. Übertritt von einer Bildungsinstitution in eine andere) als auch für die (zukünftigen) Arbeitgeber (z.B. bei Bewerbungsgesprächen) interessant. Weil Portfolios den Lernprozess dokumentieren (und nicht nur eine erbrachte Leistung), sind sie auch für die kritische Reflexion des eigenen Lernprozesses geeignet und können damit die Herausbildung der Kompetenz des selbstorganisierten Lernens fördern.\nAllerdings werden wir im BA das kontinuierliche Führen von ePortfolios nicht verpflichtend machen, sondern ihren Einsatz in verschiedenen Modulen für die Reflexion der erworbenen Kenntnisse und Fähigkeiten anregen. Im anschließenden Master-Studiengang eEducation sollen ePortfolios dagegen konsequent über die Semester geführt werden.\n\n",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 1552,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQAnswer"
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 51,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[2]"
+                                },
+                                "type": "RangeSelector"
+                            },
+                            "type": "FAQEntry"
+                        },
+                        {
+                            "properties": {
+                                "question": {
+                                    "content": "Darf ich eine Hausarbeit frankiert mit einer Internetmarke verschicken?",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 71,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Eine Hausarbeit ist fristgemäß im Prüfungsamt einzureichen. Die Einhaltung der festgelegten Abgabefrist wird durch den Poststempel nachgewiesen. Bei Internetmarken sind Entgelt, Erstellungsmonat und -jahr aufgedruckt. Die Entwertung von Internetmarken erfolgt nicht durch einen Poststempel. Weil der Poststempel auf Internetmarken i.d.R. fehlt, kann auch nicht die fristgerechte Abgabe nachgewiesen werden. Aus diesem Grund ist die Verwendung von Internetmarken nicht geeignet.\n\n",
+                                    "properties": {},
+                                    "references": {},
+                                    "selector": {
+                                        "endSelector": {
+                                            "offset": 479,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
+                                        },
+                                        "startSelector": {
+                                            "offset": 0,
+                                            "type": "XPathSelector",
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
+                                        },
+                                        "type": "RangeSelector"
+                                    },
+                                    "type": "FAQAnswer"
+                                }
+                            },
+                            "references": {},
+                            "selector": {
+                                "endSelector": {
+                                    "offset": 72,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]"
+                                },
+                                "startSelector": {
+                                    "offset": 0,
+                                    "type": "XPathSelector",
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[7]/div[1]/div[2]/div[1]/div[1]/article[3]"
                                 },
                                 "type": "RangeSelector"
                             },
@@ -1451,17 +1480,17 @@ module.exports = {
                 "type": "FAQSection",
                 "selector": {
                     "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]", "offset": 26 }
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]", "offset": 19 }
                 },
                 "properties": {
                     "title": {
+                        "content": "BA-Abschlussarbeit",
                         "type": "SectionHeading",
-                        "content": "Zulassungsvoraussetzungen",
                         "selector": {
                             "type": "RangeSelector",
-                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/h4[1]", "offset": 0 },
-                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[1]/h4[1]", "offset": 25 }
+                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[1]/h4[1]", "offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[1]/h4[1]", "offset": 18 }
                         },
                         "properties": {},
                         "references": {}
@@ -1470,158 +1499,92 @@ module.exports = {
                         {
                             "properties": {
                                 "question": {
-                                    "type": "FAQQuestion",
-                                    "content": "Ich habe keine Hochschulreife, möchte aber gerne den B.A. Bildungswissenschaft studieren. Ist das möglich?",
-                                    "selector": {
-                                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 106 },
-                                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 0 },
-                                        "type": "RangeSelector"
-                                    },
+                                    "content": "Wie ist das Verfahren bei der B.A.-Abschlussarbeit?",
                                     "properties": {},
-                                    "references": {}
-                                },
-                                "answer": {
-                                    "type": "FAQAnswer",
-                                    "content": "Kein Problem. Beruflich Qualifizierte haben die Möglichkeit, ein Probestudium an der FernUniversität aufzunehmen. Sie studieren im Probestudium gemäß dem Studienplan als Vollzeit- oder Teilzeitstudierender und legen die vorgesehenen Prüfungen ab. Das Probestudium im Bachelorstudiengang Bildungswissenschaft gilt als erfolgreich abgeschlossen, wenn Sie nach mindestens vier und maximal acht Semestern mindestens 6 Module (entspricht 90 ECTS) bestanden haben. Eine weitere Möglichkeit den Hochschulzugang zu erlangen, besteht über das Absolvieren einer Zugangsprüfung. Sie besteht aus zwei Klausuren, mit denen allgemeine und für den jeweiligen Studiengang erforderliche Kenntnisse überprüft werden. Wenn Ihre Qualifikation als fachlich entsprechend eingestuft wurde und Sie zusätzlich eine mind. 3-jährige Berufspraxis in diesem Ausbildungsberuf nachweisen, ist eine direkte Einschreibung (ohne Probestudium oder Zugangsprüfung) in den Studiengang möglich. Dies gilt derzeit für diese Ausbildungsberufe. \n\n",
+                                    "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 1006,
+                                            "offset": 51,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
+                                    "type": "FAQQuestion"
+                                },
+                                "answer": {
+                                    "content": "Sie können die Bachelor-Arbeit (z.B. per E-Mail) beim Prüfungsamt der Fakultät für Kultur- und Sozialwissenschaften anmelden, indem Sie einen formlosen Antrag auf Zulassung stellen. Alle Informationen finden Sie in diesem Dokument.\nDie Richtlinien zur „B.A. Abschlussarbeit“ sind im § 16 der Studienordnung festgelegt. Sie können die Studienordnung hier nachlesen. Der B.A.-Themenstellung wird ein „Beipackzettel“ mit Hinweisen über die B.A.-Arbeit beigefügt.\n\n",
                                     "properties": {},
                                     "references": {
                                         "fernUniLinks": [
                                             {
-                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/",
+                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/wp-content/uploads/sites/3/2015/06/Hinweise-zur-B.A.-Arbeit.pdf",
                                                 "selector": {
                                                     "endSelector": {
-                                                        "offset": 23,
+                                                        "offset": 15,
                                                         "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[1]/a[1]"
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
                                                     },
                                                     "startSelector": {
                                                         "offset": 0,
                                                         "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[1]/a[1]"
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[1]"
                                                     },
                                                     "type": "RangeSelector"
                                                 },
                                                 "type": "FernUniInternalLink"
                                             },
                                             {
-                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/fachliche_eignung.shtml",
+                                                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/wp-content/uploads/sites/3/2015/06/sto_babw.pdf",
                                                 "selector": {
                                                     "endSelector": {
-                                                        "offset": 23,
+                                                        "offset": 4,
                                                         "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[4]/a[1]"
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[2]"
                                                     },
                                                     "startSelector": {
                                                         "offset": 0,
                                                         "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[4]/a[1]"
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[2]"
                                                     },
                                                     "type": "RangeSelector"
                                                 },
                                                 "type": "FernUniInternalLink"
                                             },
                                             {
-                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/probestudium.shtml",
+                                                "destination": "http://www.fernuni-hagen.de/KSW/download/formulare/Beipackzettel-BA-MA-Arbeiten.pdf",
                                                 "selector": {
                                                     "endSelector": {
-                                                        "offset": 12,
+                                                        "offset": 15,
                                                         "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[2]/a[1]"
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[3]"
                                                     },
                                                     "startSelector": {
                                                         "offset": 0,
                                                         "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[2]/a[1]"
-                                                    },
-                                                    "type": "RangeSelector"
-                                                },
-                                                "type": "FernUniInternalLink"
-                                            },
-                                            {
-                                                "destination": "http://www.fernuni-hagen.de/studium/studienangebot/beruflich_qualifizierte/zugangspruefung.shtml",
-                                                "selector": {
-                                                    "endSelector": {
-                                                        "offset": 14,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[3]/a[1]"
-                                                    },
-                                                    "startSelector": {
-                                                        "offset": 0,
-                                                        "type": "XPathSelector",
-                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/span[3]/a[1]"
+                                                        "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]/p[1]/a[3]"
                                                     },
                                                     "type": "RangeSelector"
                                                 },
                                                 "type": "FernUniInternalLink"
                                             }
                                         ]
-                                    }
-                                }
-                            },
-                            "references": {},
-                            "selector": {
-                                "endSelector": {
-                                    "offset": 107,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]"
-                                },
-                                "startSelector": {
-                                    "offset": 0,
-                                    "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[1]"
-                                },
-                                "type": "RangeSelector"
-                            },
-                            "type": "FAQEntry"
-                        },
-                        {
-                            "properties": {
-                                "question": {
-                                    "content": "Benötige ich gute Englisch-Kenntnisse? Und sind die Materialien in Deutsch oder in Englisch?",
-                                    "properties": {},
-                                    "references": {},
-                                    "selector": {
-                                        "endSelector": {
-                                            "offset": 92,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
-                                        },
-                                        "startSelector": {
-                                            "offset": 0,
-                                            "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
-                                        },
-                                        "type": "RangeSelector"
                                     },
-                                    "type": "FAQQuestion"
-                                },
-                                "answer": {
-                                    "content": "Die Materialien in Form von Studienbriefen sind in diesem Studiengang in deutscher Sprache verfasst. Wenn allerdings Zusatzmaterialien aus dem Internet herangezogen werden, kann es natürlich sein, dass es sich auch um englischsprachige Artikel handelt. Aus diesem Grund sind Grundkenntnisse der englischen Sprache von Vorteil.\n\n",
-                                    "properties": {},
-                                    "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 328,
+                                            "offset": 461,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
@@ -1631,14 +1594,14 @@ module.exports = {
                             "references": {},
                             "selector": {
                                 "endSelector": {
-                                    "offset": 93,
+                                    "offset": 52,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]"
                                 },
                                 "startSelector": {
                                     "offset": 0,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[2]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[1]"
                                 },
                                 "type": "RangeSelector"
                             },
@@ -1647,38 +1610,38 @@ module.exports = {
                         {
                             "properties": {
                                 "question": {
-                                    "content": "Muss ich einen Deutschtest machen?",
+                                    "content": "Was ist das „Diploma Supplement“?",
                                     "properties": {},
                                     "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 34,
+                                            "offset": 33,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/h6[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
                                     "type": "FAQQuestion"
                                 },
                                 "answer": {
-                                    "content": "Wenn Sie Ihre Studienqualifikation nicht an einer deutschsprachigen Einrichtung erworben haben, müssen Sie bei der Einschreibung einen anerkannten Nachweis Ihrer Deutschkenntnisse vorlegen. Einen Deutschtest können Sie an der FernUniversität in Hagen absolvieren, aber auch an anderen Unis oder im Goethe-Institut. Nähere Informationen erteilt Ihnen das Studierendensekretariat.\n\n",
+                                    "content": "Hierzu schreibt das Bologna-Zentrum der Hochschulrektorenkonferenz auf ihrer Internetseite:\n„Das „Diploma Supplement“ (DS) ist ein Text mit einheitlichen Angaben zur Beschreibung von Hochschulabschlüssen und damit verbundener Qualifikationen. Als ergänzende Information zu den offiziellen Dokumenten über Hochschulabschlüsse (Verleihungs-Urkunden, Prüfungs-Zeugnisse) soll es – international und auch national – die Bewertung und Einstufung von akademischen Abschlüssen sowohl für Studien- als auch für Berufszwecke erleichtern und verbessern.“\n\n",
                                     "properties": {},
                                     "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 380,
+                                            "offset": 546,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]/div[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
@@ -1688,14 +1651,14 @@ module.exports = {
                             "references": {},
                             "selector": {
                                 "endSelector": {
-                                    "offset": 35,
+                                    "offset": 34,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]"
                                 },
                                 "startSelector": {
                                     "offset": 0,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[3]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[2]"
                                 },
                                 "type": "RangeSelector"
                             },
@@ -1704,38 +1667,38 @@ module.exports = {
                         {
                             "properties": {
                                 "question": {
-                                    "content": "Welche technische Ausstattung benötige ich?",
+                                    "content": "Darf ich eine Abschlussarbeit frankiert mit einer Internetmarke verschicken?",
                                     "properties": {},
                                     "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 43,
+                                            "offset": 76,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/h6[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/h6[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/h6[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
                                     "type": "FAQQuestion"
                                 },
                                 "answer": {
-                                    "content": "Neben einem Computer mit herkömmlicher Software – Office-Anwendungen, aktuellem Webbrowser, Adobe Acrobat Reader – ist ein Internetzugang erforderlich. Sowohl für den Computer als auch für den Internetzugang gilt: Je schneller bzw. leistungsfähiger, desto besser.\nZu Beginn des Studiums benötigen Sie Kenntnisse im Umgang mit eMail und Internetrecherchen. Hilfreich sind Kenntnisse in der Nutzung synchroner und asynchroner Kommunikationsformen. Im Laufe des Studiengangs lernen Sie diese zunehmend kennen.\n\n \n\n",
+                                    "content": "Eine Abschlussarbeit ist fristgemäß im Prüfungsamt einzureichen. Die Einhaltung der festgelegten Abgabefrist wird durch den Poststempel nachgewiesen. Bei Internetmarken sind Entgelt, Erstellungsmonat und -jahr aufgedruckt. Die Entwertung von Internetmarken erfolgt nicht durch einen Poststempel. Weil der Poststempel auf Internetmarken i.d.R. fehlt, kann auch nicht die fristgerechte Abgabe nachgewiesen werden. Aus diesem Grund ist die Verwendung von Internetmarken nicht geeignet.\n\n",
                                     "properties": {},
                                     "references": {},
                                     "selector": {
                                         "endSelector": {
-                                            "offset": 511,
+                                            "offset": 484,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
                                         },
                                         "startSelector": {
                                             "offset": 0,
                                             "type": "XPathSelector",
-                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]/div[1]"
+                                            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]/div[1]"
                                         },
                                         "type": "RangeSelector"
                                     },
@@ -1745,84 +1708,203 @@ module.exports = {
                             "references": {},
                             "selector": {
                                 "endSelector": {
-                                    "offset": 44,
+                                    "offset": 77,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]"
                                 },
                                 "startSelector": {
                                     "offset": 0,
                                     "type": "XPathSelector",
-                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[1]/article[4]"
+                                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[8]/div[1]/div[2]/div[1]/div[1]/article[3]"
                                 },
                                 "type": "RangeSelector"
                             },
                             "type": "FAQEntry"
-                        }
-                    ]
-                },
-                "references": {}
-            },
-            {
-                "type": "FAQSection",
-                "selector": {
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]", "offset": 0 },
-                    "endSelector": { "offset": 23, "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]" },
-                    "type": "RangeSelector"
-                },
-                "properties": {
-                    "title": {
-                        "type": "SectionHeading",
-                        "content": "Berufsfeldorientierung",
-                        "selector": {
-                            "type": "RangeSelector",
-                            "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/h4[1]", "offset": 0 },
-                            "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[1]/h4[1]", "offset": 22 }
-                        },
-                        "properties": {},
-                        "references": {}
-                    },
-                    "entries": [
-                        {
-                            "type": "FAQEntry",
-                            "selector": {
-                                "type": "RangeSelector",
-                                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]", "offset": 152 },
-                                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]", "offset": 0 }
-                            },
-                            "properties": {
-                                "question": {
-                                    "type": "FAQQuestion",
-                                    "content": "Was fange ich nach dem Studium mit dem Abschluss“Bachelor of Arts“ in Bildungswissenschaft an? Welche Berufsaussichten habe ich mit diesem Studiengang?",
-                                    "selector": {
-                                        "type": "RangeSelector",
-                                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 0 },
-                                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/h6[1]", "offset": 151 }
-                                    },
-                                    "properties": {},
-                                    "references": {}
-                                },
-                                "answer": {
-                                    "type": "FAQAnswer",
-                                    "content": "Der Studiengang bereitet Sie auf Tätigkeiten in öffentlichen und privaten Organisationen und Institutionen im Bereich der Grundlagenforschung, der Konzeptualisierung, der Organisation, Durchführung und Evaluation von Bildungsprozessen sowie mediatisierten Kommunikationsabläufen vor.\nDiese Kompetenzen werden benötigt in Institutionen der allgemeinen und beruflichen Aus- und Weiterbildung, Einrichtungen der Erwachsenen- und politischen Bildung, Personalentwicklung in Unternehmen, Kammern, Arbeitsverwaltung und Verbänden, Bildungsmanagement, -beratung und -forschung, Fördereinrichtungen und in Organisationen der bi- und multilateralen Bildungs- und Berufsbildungszusammenarbeit.\nDer Bachelorstudiengang Bildungswissenschaft ist für all diejenigen gedacht, die in der Bildung und Ausbildung von jungen Menschen und Erwachsenen, in Personalmanagement und Arbeitsverwaltung, in Bildungsverwaltung und -forschung oder als (Unternehmens-)Berater tätig sind oder sein wollen. Nach dem Studium sollen die Absolventen und Absolventinnen in der Lage sein, als Bildungspersonal in verschiedenen beruflichen Kontexten tätig zu werden.\n\n",
-                                    "selector": {
-                                        "type": "RangeSelector",
-                                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]", "offset": 0 },
-                                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[3]/div[1]/div[2]/div[1]/div[1]/article[1]/div[1]", "offset": 1130 }
-                                    },
-                                    "properties": {},
-                                    "references": {}
-                                }
-                            },
-                            "references": {}
                         }
                     ]
                 },
                 "references": {}
             }
-        ]
+        ],
+        "header": {
+            "type": "Header",
+            "selector": {
+                "type": "RangeSelector",
+                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]", "offset": 0 },
+                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]", "offset": 43 }
+            },
+            "properties": {
+                "fernUni": {
+                    "type": "Brand",
+                    "selector": {
+                        "type": "RangeSelector",
+                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 },
+                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 }
+                    },
+                    "references": {
+                        "homepage": {
+                            "type": "FernUniInternalLink",
+                            "destination": "http://www.fernuni-hagen.de/",
+                            "selector": {
+                                "type": "RangeSelector",
+                                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 },
+                                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]", "offset": 0 }
+                            }
+                        },
+                        "logo": {
+                            "type": "Image",
+                            "destination": "service_files/feulogo.png",
+                            "selector": {
+                                "type": "RangeSelector",
+                                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]/img[1]", "offset": 0 },
+                                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[1]/a[1]/img[1]", "offset": 0 }
+                            }
+                        }
+                    },
+                    "properties": {}
+                }
+            },
+            "references": {}
+        },
+        "heading": {
+            "type": "PageHeading",
+            "content": "Service",
+            "selector": {
+                "type": "RangeSelector",
+                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h3[1]","offset": 0 },
+                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h3[1]", "offset": 7 }
+            },
+            "properties": {},
+            "references": {}
+        },
+        "introduction": {
+            "type": "Text",
+            "content": "Viele Fragen zum B.A. Bildungswissenschaft klären sich durch die Lektüre dieser FAQs! Bitte machen Sie zunächst von diesem Angebot Gebrauch, bevor Sie sich an die Studienberatung wenden.\n(Stand: 06/2015)",
+            "selector": {
+                "type": "RangeSelector",
+                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/p[1]", "offset": 0 },
+                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/p[1]", "offset": 203 }
+            },
+            "properties": {},
+            "references": {}
+        },
+        "portal": {
+            "type": "Portal",
+            "content": "B.A. Bildungswissenschaft",
+            "selector": {
+                "type": "RangeSelector",
+                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 0 },
+                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 25 }
+            },
+            "references": {
+                "homepage": {
+                    "type": "FernUniInternalLink",
+                    "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/",
+                    "selector": {
+                        "type": "RangeSelector",
+                        "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 0 },
+                        "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[1]/div[1]/div[1]/div[1]/h3[1]/a[1]", "offset": 25 }
+                    }
+                }
+            },
+            "properties": {}
+        },
+        "subHeading": {
+            "type": "SectionHeading",
+            "content": "Fragen und Antworten zum B.A. Bildungswissenschaft (F.A.Q.s)",
+            "selector": {
+                "type": "RangeSelector",
+                "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h4[1]", "offset": 0 },
+                "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/h4[1]", "offset": 60 }
+            },
+            "properties": {},
+            "references": {}
+        }
     },
     "references": {
+        "servicePages": [
+            {
+                "type": "ServicePage",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[1]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[1]/a[1]", "offset": 7 }
+                }
+            },
+            {
+                "type": "ServicePage",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/aktuelles/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[2]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[2]/a[1]", "offset": 9 }
+                }
+            },
+            {
+                "type": "ServicePage",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/kontakt/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[3]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[3]/a[1]", "offset": 7 }
+                }
+            },
+            {
+                "type": "ServicePage",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/downloads/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[4]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[4]/a[1]", "offset": 9 }
+                }
+            },
+            {
+                "type": "ServicePage",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/online-systeme/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[5]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[5]/a[1]", "offset": 14 }
+                }
+            },
+            {
+                "type": "ServicePage",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/vom-bachelor-zum-master/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[6]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[6]/a[1]", "offset": 23 }
+                }
+            }
+        ],
         "siteMainPages": [
+            {
+                "type": "FernUniInternalLink",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/einstieg/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]", "offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]", "offset": 9 }
+                }
+            },
+            {
+                "type": "FernUniInternalLink",
+                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/studium/",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": {
+                        "type": "XPathSelector",
+                        "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+                        "offset": 0
+                    },
+                    "endSelector": {
+                        "type": "XPathSelector",
+                        "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
+                        "offset": 8
+                    }
+                }
+            },
             {
                 "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/pruefungen/",
                 "selector": {
@@ -1873,88 +1955,6 @@ module.exports = {
                     "type": "RangeSelector"
                 },
                 "type": "FernUniInternalLink"
-            },
-            {
-                "type": "FernUniInternalLink",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/einstieg/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[1]/a[1]", "offset": 9 }
-                }
-            },
-            {
-                "type": "FernUniInternalLink",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/studium/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": {
-                        "type": "XPathSelector",
-                        "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
-                        "offset": 0
-                    },
-                    "endSelector": {
-                        "type": "XPathSelector",
-                        "value": "/html[1]/body[1]/div[1]/header[1]/div[1]/div[1]/div[2]/ul[1]/li[2]/a[1]",
-                        "offset": 8
-                    }
-                }
-            }
-        ],
-        "servicePages": [
-            {
-                "type": "ServicePage",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[1]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[1]/a[1]", "offset": 7 }
-                }
-            },
-            {
-                "type": "ServicePage",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/vom-bachelor-zum-master/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[6]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[6]/a[1]", "offset": 23 }
-                }
-            },
-            {
-                "type": "ServicePage",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/aktuelles/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[2]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[2]/a[1]", "offset": 9 }
-                }
-            },
-            {
-                "type": "ServicePage",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/kontakt/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[3]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[3]/a[1]", "offset": 7 }
-                }
-            },
-            {
-                "type": "ServicePage",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/downloads/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[4]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[4]/a[1]", "offset": 9 }
-                }
-            },
-            {
-                "type": "ServicePage",
-                "destination": "http://www.fernuni-hagen.de/KSW/portale/babw/service/online-systeme/",
-                "selector": {
-                    "type": "RangeSelector",
-                    "startSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[5]/a[1]", "offset": 0 },
-                    "endSelector": { "type": "XPathSelector", "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[1]/aside[1]/div[1]/div[1]/ul[1]/li[5]/a[1]", "offset": 14 }
-                }
             }
         ]
     }
