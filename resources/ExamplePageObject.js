@@ -190,6 +190,26 @@ module.exports = {
                 "startSelector": { "type": "XPathSelector", "value": "//table[3]/tr[3]/td[3]","offset": 0 },
                 "endSelector": { "type": "XPathSelector", "value": "//table[3]/tr[3]/td[33]", "offset": 120 }
             }
-        }
+        },
+        "my_reference_4": [
+            {
+                "type": "MyReference4.1Type",
+                "destination": "http://myhost/myfolder/myotherpage4#1",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "//table[41]/tr[41]/td[41]","offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "//table[41]/tr[41]/td[411]", "offset": 120 }
+                }
+            },
+            {
+                "type": "MyReference4.2Type",
+                "destination": "http://myhost/myfolder/myotherpage4#2",
+                "selector": {
+                    "type": "RangeSelector",
+                    "startSelector": { "type": "XPathSelector", "value": "//table[42]/tr[42]/td[42]","offset": 0 },
+                    "endSelector": { "type": "XPathSelector", "value": "//table[42]/tr[42]/td[422]", "offset": 120 }
+                }
+            },
+        ]
     }
 };
