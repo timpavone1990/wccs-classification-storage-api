@@ -161,7 +161,42 @@ module.exports = {
                 "references": {},
                 "properties": {}
             }
-        ]
+        ],
+        "my_property_4": {
+            "type": "MyProperty4Type",
+            "selector": {
+                "type": "RangeSelector",
+                "startSelector": { "type": "XPathSelector", "value": "//p[4]/span[4]/span[4]","offset": 0 },
+                "endSelector": { "type": "XPathSelector", "value": "//p[4]/span[4]/span[44]", "offset": 120 }
+            },
+            "content": "MyProperty4Content",
+            "properties": {
+                "my_property_4.1": [
+                    {
+                        "type": "MyProperty4.1Type",
+                        "selector": {
+                            "type": "RangeSelector",
+                            "startSelector": { "type": "XPathSelector", "value": "//p[411]/span[411]/span[411]","offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "//p[411]/span[411]/span[4111]", "offset": 120 }
+                        },
+                        "content": "MyProperty4.1Item1Content",
+                        "references": {},
+                        "properties": {}
+                    },
+                    {
+                        "type": "MyProperty4.1Type",
+                        "selector": {
+                            "type": "RangeSelector",
+                            "startSelector": { "type": "XPathSelector", "value": "//p[412]/span[412]/span[412]","offset": 0 },
+                            "endSelector": { "type": "XPathSelector", "value": "//p[412]/span[412]/span[4122]", "offset": 120 }
+                        },
+                        "content": "MyProperty4.1Item2Content",
+                        "references": {},
+                        "properties": {}
+                    },
+                ]
+            }
+        }
     },
     "references": {
         "my_reference_1": {
@@ -209,7 +244,7 @@ module.exports = {
                     "startSelector": { "type": "XPathSelector", "value": "//table[42]/tr[42]/td[42]","offset": 0 },
                     "endSelector": { "type": "XPathSelector", "value": "//table[42]/tr[42]/td[422]", "offset": 120 }
                 }
-            },
+            }
         ]
     }
 };
