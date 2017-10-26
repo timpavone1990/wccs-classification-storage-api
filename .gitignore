@@ -3,6 +3,7 @@
 .directory
 node_modules/
 .gradle/
+.nyc_output/
 build/
 dist/
 
