@@ -193,9 +193,10 @@ module.exports = {
                         "content": "MyProperty4.1Item2Content",
                         "references": {},
                         "properties": {}
-                    },
+                    }
                 ]
-            }
+            },
+            "references": {}
         }
     },
     "references": {
