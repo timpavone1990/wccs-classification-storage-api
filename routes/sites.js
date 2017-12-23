@@ -26,18 +26,6 @@ router.route("/:siteId/pages")
             logger.error(e.message);
             next(e);
         }
-    })
-    .post((request, response) => {
-        console.time("overall");
-        let storePagePromise = pageRepository.store(request.body, {"id": request.params.siteId});
-        storePagePromise.then(() => {
-            // TODO Set Location header and payload?
-            response.status(201).end();
-            console.timeEnd("overall");
-        }, (error) => {
-            console.log(error);
-            response.status(500).json({ "error": "Unexpected error. See log for details." });
-        });
     });
 
 router.route("/:siteId/pages/:url")
@@ -49,6 +37,19 @@ router.route("/:siteId/pages/:url")
             console.log(e);
             response.status(500).json({ "error": "Unexpected error. See log for details." });
         }
+    })
+    .put((request, response) => {
+        console.time("overall");
+        request.body.url = request.params.url;
+        let storePagePromise = pageRepository.store(request.body, {"id": request.params.siteId});
+        storePagePromise.then(() => {
+            // TODO Set Location header and payload?
+            response.status(201).end();
+            console.timeEnd("overall");
+        }, (error) => {
+            console.log(error);
+            response.status(500).json({ "error": "Unexpected error. See log for details." });
+        });
     });
 
 module.exports = router;
