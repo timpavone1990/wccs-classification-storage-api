@@ -1,0 +1,122 @@
+{
+  "properties": {
+    "teachers": [
+      {
+        "properties": {
+          "contactInformation": {
+            "properties": {},
+            "references": {
+              "email": {
+                "destination": "mailto:christopher.dorn",
+                "selector": {
+                  "endSelector": {
+                    "offset": 16,
+                    "type": "XPathSelector",
+                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]/a[2]"
+                  },
+                  "startSelector": {
+                    "offset": 0,
+                    "type": "XPathSelector",
+                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]/a[2]"
+                  },
+                  "type": "RangeSelector"
+                },
+                "type": "Email"
+              }
+            },
+            "selector": {
+              "endSelector": {
+                "offset": 146,
+                "type": "XPathSelector",
+                "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]"
+              },
+              "startSelector": {
+                "offset": 0,
+                "type": "XPathSelector",
+                "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]"
+              },
+              "type": "RangeSelector"
+            },
+            "type": "ContactInformation"
+          }
+        },
+        "references": {},
+        "selector": {
+          "endSelector": {
+            "offset": 149,
+            "type": "XPathSelector",
+            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]"
+          },
+          "startSelector": {
+            "offset": 0,
+            "type": "XPathSelector",
+            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]"
+          },
+          "type": "RangeSelector"
+        },
+        "type": "Teacher"
+      }
+    ],
+    "teachersCopy": [
+      {
+        "properties": {
+          "contactInformation": {
+            "properties": {},
+            "references": {
+              "email": {
+                "destination": "mailto:christopher.dorn",
+                "selector": {
+                  "endSelector": {
+                    "offset": 16,
+                    "type": "XPathSelector",
+                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]/a[2]"
+                  },
+                  "startSelector": {
+                    "offset": 0,
+                    "type": "XPathSelector",
+                    "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]/a[2]"
+                  },
+                  "type": "RangeSelector"
+                },
+                "type": "Email"
+              }
+            },
+            "selector": {
+              "endSelector": {
+                "offset": 146,
+                "type": "XPathSelector",
+                "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]"
+              },
+              "startSelector": {
+                "offset": 0,
+                "type": "XPathSelector",
+                "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]/div[1]/p[1]"
+              },
+              "type": "RangeSelector"
+            },
+            "type": "ContactInformation"
+          }
+        },
+        "references": {},
+        "selector": {
+          "endSelector": {
+            "offset": 148,
+            "type": "XPathSelector",
+            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]"
+          },
+          "startSelector": {
+            "offset": 0,
+            "type": "XPathSelector",
+            "value": "/html[1]/body[1]/div[1]/section[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[7]/div[2]/div[1]"
+          },
+          "type": "RangeSelector"
+        },
+        "type": "Teacher"
+      }
+    ]
+  },
+  "references": {},
+  "status": "Classified",
+  "type": "Teachers",
+  "url": "http://www.fernuni-hagen.de/KSW/portale/bapvs/einstieg/lehrende-und-betreuende-im-b-a-pvs/"
+}
