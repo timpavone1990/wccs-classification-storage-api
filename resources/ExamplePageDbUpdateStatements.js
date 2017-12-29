@@ -19,7 +19,7 @@ module.exports ={
         {
             // PROPERTY
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "c1b13f177c6446d1f0ecc37abbae005c", "type": "MyProperty1Type"} }
+            "parameters": { "p": { "checksum": "b5b995a982a99fd06cb36938d60b8a96", "type": "MyProperty1Type"} }
         },
         {
             // REFERENCE
@@ -40,7 +40,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "c1b13f177c6446d1f0ecc37abbae005c" },
+                "p": { "checksum": "b5b995a982a99fd06cb36938d60b8a96" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage1.1" },
                 "ref": {"type": "MyReference1.1Type", "name": "my_reference_1.1", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[11]/tr[11]/td[11]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[11]/tr[11]/td[111]", "offset": 120 }}}
             }
@@ -63,7 +63,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "c1b13f177c6446d1f0ecc37abbae005c" },
+                "p": { "checksum": "b5b995a982a99fd06cb36938d60b8a96" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage1.2" },
                 "ref": {"type": "MyReference1.2Type", "name": "my_reference_1.2", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[12]/tr[12]/td[12]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[12]/tr[12]/td[122]", "offset": 120 }}}
             }
@@ -76,7 +76,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "c1b13f177c6446d1f0ecc37abbae005c" },
+                "p": { "checksum": "b5b995a982a99fd06cb36938d60b8a96" },
                 "c": { "value": "MyProperty1Content" }
             }
         },
@@ -90,7 +90,7 @@ module.exports ={
         },
         {
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "99ee50ece1191c1bf875eded0866c54c", "type": "MyProperty2.1Type"} }
+            "parameters": { "p": { "checksum": "9bf1f1051f97d46b7086ffc3df6a832a", "type": "MyProperty2.1Type"} }
         },
         {
             "statement":
@@ -110,7 +110,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "99ee50ece1191c1bf875eded0866c54c" },
+                "p": { "checksum": "9bf1f1051f97d46b7086ffc3df6a832a" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage1.2" },
                 "ref": {"type": "MyReference1.2Type", "name": "my_reference_2.1.1", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[12]/tr[12]/td[12]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[12]/tr[12]/td[122]", "offset": 120 }}}
             }
@@ -122,7 +122,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "99ee50ece1191c1bf875eded0866c54c" },
+                "p": { "checksum": "9bf1f1051f97d46b7086ffc3df6a832a" },
                 "c": { "value": "MyProperty2.1Content" }
             }
         },
@@ -132,7 +132,7 @@ module.exports ={
         },
         {
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "11fa789c32c7f7e77f0aefc96a281957", "type": "MyProperty2.2Type"} }
+            "parameters": { "p": { "checksum": "2528ec83539e14a0220cee92329f8c3f", "type": "MyProperty2.2Type"} }
         },
         {
             // READS
@@ -142,7 +142,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "11fa789c32c7f7e77f0aefc96a281957" },
+                "p": { "checksum": "2528ec83539e14a0220cee92329f8c3f" },
                 "c": { "value": "MyProperty2.2Content" }
             }
         },
@@ -154,7 +154,7 @@ module.exports ={
         {
             // PROPERTY
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "d5ede2981a48bf3f010f1159212ee85f", "type": "MyProperty3Type"} }
+            "parameters": { "p": { "checksum": "e6e64c8c129f23c3fd01cfa8f931738d", "type": "MyProperty3Type"} }
         },
         {
             // READS
@@ -164,7 +164,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "d5ede2981a48bf3f010f1159212ee85f" },
+                "p": { "checksum": "e6e64c8c129f23c3fd01cfa8f931738d" },
                 "c": { "value": "MyProperty3Item1Content" }
             }
         },
@@ -186,7 +186,7 @@ module.exports ={
         {
             // PROPERTY
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "2ae9c40b28a208305b6aae864cd17341", "type": "MyProperty2Type"} }
+            "parameters": { "p": { "checksum": "c48ca97c86120867f45580b1e58b4e05", "type": "MyProperty2Type"} }
         },
         {
             // OWNS
@@ -206,8 +206,8 @@ module.exports ={
             "endSelectorOffset: $o.selector.endSelector.offset" +
             "}]->(p2)",
             "parameters": {
-                "p1": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
-                "p2": { "checksum": "99ee50ece1191c1bf875eded0866c54c" },
+                "p1": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
+                "p2": { "checksum": "9bf1f1051f97d46b7086ffc3df6a832a" },
                 "o": {"name": "my_property_2.1", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[21]/span[2]/span[21]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[21]/span[2]/span[211]", "offset": 120 }}}
             }
         },
@@ -229,8 +229,8 @@ module.exports ={
             "endSelectorOffset: $o.selector.endSelector.offset" +
             "}]->(p2)",
             "parameters": {
-                "p1": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
-                "p2": { "checksum": "11fa789c32c7f7e77f0aefc96a281957" },
+                "p1": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
+                "p2": { "checksum": "2528ec83539e14a0220cee92329f8c3f" },
                 "o": {"name": "my_property_2.2", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[22]/span[2]/span[22]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[22]/span[22]/span[222]", "offset": 120 }}}
             }
         },
@@ -252,8 +252,8 @@ module.exports ={
             "endSelectorOffset: $o.selector.endSelector.offset" +
             "}]->(p2)",
             "parameters": {
-                "p1": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
-                "p2": { "checksum": "d5ede2981a48bf3f010f1159212ee85f" },
+                "p1": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
+                "p2": { "checksum": "e6e64c8c129f23c3fd01cfa8f931738d" },
                 "o": {"name": "my_property_2.3", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[31]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[311]", "offset": 120 }}}
             }
         },
@@ -276,7 +276,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
+                "p": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage2.1" },
                 "ref": {"type": "MyReference2.1Type", "name": "my_reference_2.1", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[21]/tr[21]/td[21]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[21]/tr[21]/td[211]", "offset": 120 }}}
             }
@@ -300,7 +300,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
+                "p": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage2.2" },
                 "ref": {"type": "MyReference2.2Type", "name": "my_reference_2.2", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[22]/tr[22]/td[22]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[22]/tr[22]/td[222]", "offset": 120 }}}
             }
@@ -313,7 +313,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
+                "p": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
                 "c": { "value": "MyProperty2Content" }
             }
         },
@@ -335,7 +335,7 @@ module.exports ={
         {
             // PROPERTY
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "176b48fad17a1c4d1c278a1c47940948", "type": "MyProperty3Type"} }
+            "parameters": { "p": { "checksum": "3bad72fa546ec709e46ef8bba4bb9b69", "type": "MyProperty3Type"} }
         },
         {
             // REFERENCE
@@ -356,7 +356,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "176b48fad17a1c4d1c278a1c47940948" },
+                "p": { "checksum": "3bad72fa546ec709e46ef8bba4bb9b69" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage3#1.1" },
                 "ref": {"type": "MyReference3Item1.1Type", "name": "my_reference_3Item1", "isCollection": true, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[311]/tr[311]/td[311]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[311]/tr[311]/td[3111]", "offset": 120 }}}
             }
@@ -380,7 +380,7 @@ module.exports ={
             "endSelectorOffset: $ref.selector.endSelector.offset" +
             "}]->(r)",
             "parameters": {
-                "p": { "checksum": "176b48fad17a1c4d1c278a1c47940948" },
+                "p": { "checksum": "3bad72fa546ec709e46ef8bba4bb9b69" },
                 "r": { "destination": "http://myhost/myfolder/myotherpage3#1.2" },
                 "ref": {"type": "MyReference3Item1.2Type", "name": "my_reference_3Item1", "isCollection": true, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//table[312]/tr[312]/td[312]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//table[312]/tr[312]/td[3122]", "offset": 120 }}}
             }
@@ -393,7 +393,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "176b48fad17a1c4d1c278a1c47940948" },
+                "p": { "checksum": "3bad72fa546ec709e46ef8bba4bb9b69" },
                 "c": { "value": "MyProperty3Item1Content" }
             }
         },
@@ -405,7 +405,7 @@ module.exports ={
         {
             // PROPERTY
             "statement": "MERGE (p:Property {checksum: $p.checksum,type: $p.type})",
-            "parameters": { "p": { "checksum": "bac60ba1fcccf1636836b14be209e9ec", "type": "MyProperty3Type"} }
+            "parameters": { "p": { "checksum": "e83e29c8456a74d45b0813dea04bdf83", "type": "MyProperty3Type"} }
         },
         {
             // READS
@@ -415,7 +415,7 @@ module.exports ={
             "(c:Content {value: $c.value})\n" +
             "MERGE (p)-[:Reads]->(c)",
             "parameters": {
-                "p": { "checksum": "bac60ba1fcccf1636836b14be209e9ec" },
+                "p": { "checksum": "e83e29c8456a74d45b0813dea04bdf83" },
                 "c": { "value": "MyProperty3Item2Content" }
             }
         },
@@ -432,7 +432,7 @@ module.exports ={
             // PROPERTY
             "parameters": {
                 "p": {
-                    "checksum": "125d7d11a0b5b87e5fd03b8ac3785e40",
+                    "checksum": "2f135c725f323a72162e46756b94b752",
                     "type": "MyProperty4.1Type"
                 }
             },
@@ -445,7 +445,7 @@ module.exports ={
                     "value": "MyProperty4.1Item1Content"
                 },
                 "p": {
-                    "checksum": "125d7d11a0b5b87e5fd03b8ac3785e40"
+                    "checksum": "2f135c725f323a72162e46756b94b752"
                 }
             },
             "statement": "MATCH(p:Property {checksum: $p.checksum}),(c:Content {value: $c.value})\nMERGE (p)-[:Reads]->(c)"
@@ -463,7 +463,7 @@ module.exports ={
             // PROPERTY
             "parameters": {
                 "p": {
-                    "checksum": "1234f373870b3b7bd921b49196a264ef",
+                    "checksum": "a2d05ca87a0e0c40520b35dddc7deecf",
                     "type": "MyProperty4.1Type"
                 }
             },
@@ -476,7 +476,7 @@ module.exports ={
                     "value": "MyProperty4.1Item2Content"
                 },
                 "p": {
-                    "checksum": "1234f373870b3b7bd921b49196a264ef"
+                    "checksum": "a2d05ca87a0e0c40520b35dddc7deecf"
                 }
             },
             "statement": "MATCH(p:Property {checksum: $p.checksum}),(c:Content {value: $c.value})\nMERGE (p)-[:Reads]->(c)"
@@ -494,7 +494,7 @@ module.exports ={
             // PROPERTY
             "parameters": {
                 "p": {
-                    "checksum": "4c820c612a246ceef61f26371795145e",
+                    "checksum": "54bef3fc80f005f069b989473ee2b900",
                     "type": "MyProperty4Type"
                 }
             },
@@ -521,10 +521,10 @@ module.exports ={
                     }
                 },
                 "p1": {
-                    "checksum": "4c820c612a246ceef61f26371795145e"
+                    "checksum": "54bef3fc80f005f069b989473ee2b900"
                 },
                 "p2": {
-                    "checksum": "125d7d11a0b5b87e5fd03b8ac3785e40"
+                    "checksum": "2f135c725f323a72162e46756b94b752"
                 }
             },
             "statement": "MATCH(p1:Property {checksum: $p1.checksum}),(p2:Property {checksum: $p2.checksum})\nMERGE (p1)-[o:Owns {name: $o.name,isCollection: $o.isCollection,selectorType: $o.selector.type,startSelectorType: $o.selector.startSelector.type,startSelectorValue: $o.selector.startSelector.value,startSelectorOffset: $o.selector.startSelector.offset,endSelectorType: $o.selector.endSelector.type,endSelectorValue: $o.selector.endSelector.value,endSelectorOffset: $o.selector.endSelector.offset}]->(p2)"
@@ -550,10 +550,10 @@ module.exports ={
                     }
                 },
                 "p1": {
-                    "checksum": "4c820c612a246ceef61f26371795145e"
+                    "checksum": "54bef3fc80f005f069b989473ee2b900"
                 },
                 "p2": {
-                    "checksum": "1234f373870b3b7bd921b49196a264ef"
+                    "checksum": "a2d05ca87a0e0c40520b35dddc7deecf"
                 }
             },
             "statement": "MATCH(p1:Property {checksum: $p1.checksum}),(p2:Property {checksum: $p2.checksum})\nMERGE (p1)-[o:Owns {name: $o.name,isCollection: $o.isCollection,selectorType: $o.selector.type,startSelectorType: $o.selector.startSelector.type,startSelectorValue: $o.selector.startSelector.value,startSelectorOffset: $o.selector.startSelector.offset,endSelectorType: $o.selector.endSelector.type,endSelectorValue: $o.selector.endSelector.value,endSelectorOffset: $o.selector.endSelector.offset}]->(p2)"
@@ -565,7 +565,7 @@ module.exports ={
                     "value": "MyProperty4Content"
                 },
                 "p": {
-                    "checksum": "4c820c612a246ceef61f26371795145e"
+                    "checksum": "54bef3fc80f005f069b989473ee2b900"
                 }
             },
             "statement": "MATCH(p:Property {checksum: $p.checksum}),(c:Content {value: $c.value})\nMERGE (p)-[:Reads]->(c)"
@@ -625,7 +625,7 @@ module.exports ={
             "}]->(prop)",
             "parameters": {
                 "p": {"url": "http://myhost/myfolder/mypage"},
-                "prop": { "checksum": "c1b13f177c6446d1f0ecc37abbae005c" },
+                "prop": { "checksum": "b5b995a982a99fd06cb36938d60b8a96" },
                 "o": {"name": "my_property_1", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[1]/span[1]/span[1]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[1]/span[1]/span[11]", "offset": 120 }}}
             }
         },
@@ -648,7 +648,7 @@ module.exports ={
             "}]->(prop)",
             "parameters": {
                 "p": {"url": "http://myhost/myfolder/mypage"},
-                "prop": { "checksum": "2ae9c40b28a208305b6aae864cd17341" },
+                "prop": { "checksum": "c48ca97c86120867f45580b1e58b4e05" },
                 "o": {"name": "my_property_2", "isCollection": false, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[2]/span[2]/span[2]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[2]/span[2]/span[22]", "offset": 120 }}}
             }
         },
@@ -671,7 +671,7 @@ module.exports ={
             "}]->(prop)",
             "parameters": {
                 "p": {"url": "http://myhost/myfolder/mypage"},
-                "prop": { "checksum": "176b48fad17a1c4d1c278a1c47940948" },
+                "prop": { "checksum": "3bad72fa546ec709e46ef8bba4bb9b69" },
                 "o": {"name": "my_property_3", "isCollection": true, "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[31]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[311]", "offset": 120 }}}
             }
         },
@@ -694,7 +694,7 @@ module.exports ={
             "}]->(prop)",
             "parameters": {
                 "p": {"url": "http://myhost/myfolder/mypage"},
-                "prop": { "checksum": "bac60ba1fcccf1636836b14be209e9ec" },
+                "prop": { "checksum": "e83e29c8456a74d45b0813dea04bdf83" },
                 "o": {"isCollection": true, "name": "my_property_3", "selector": {"type": "RangeSelector","startSelector": { "type": "XPathSelector", "value": "//p[32]/span[32]/span[32]","offset": 0 },"endSelector": { "type": "XPathSelector", "value": "//p[32]/span[32]/span[322]", "offset": 120 }}}
             }
         },
@@ -722,7 +722,7 @@ module.exports ={
                     "url": "http://myhost/myfolder/mypage"
                 },
                 "prop": {
-                    "checksum": "4c820c612a246ceef61f26371795145e"
+                    "checksum": "54bef3fc80f005f069b989473ee2b900"
                 }
             },
             "statement": "MATCH(p:Resource {url: $p.url}),(prop:Property {checksum: $prop.checksum})\nMERGE (p)-[o:Owns {name: $o.name,isCollection: $o.isCollection,selectorType: $o.selector.type,startSelectorType: $o.selector.startSelector.type,startSelectorValue: $o.selector.startSelector.value,startSelectorOffset: $o.selector.startSelector.offset,endSelectorType: $o.selector.endSelector.type,endSelectorValue: $o.selector.endSelector.value,endSelectorOffset: $o.selector.endSelector.offset}]->(prop)"
