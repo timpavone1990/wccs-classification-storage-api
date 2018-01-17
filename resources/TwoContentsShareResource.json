@@ -1,8 +1,8 @@
 {
-  "properties": {
+  "contents": {
     "teachers": [
       {
-        "properties": {},
+        "contents": {},
         "references": {
           "email": {
             "destination": "mailto:christopher.dorn",
@@ -19,7 +19,7 @@
               },
               "type": "RangeSelector"
             },
-            "type": "Email"
+            "class": "Email"
           }
         },
         "selector": {
@@ -35,12 +35,12 @@
           },
           "type": "RangeSelector"
         },
-        "type": "Teacher"
+        "class": "Teacher"
       }
     ],
     "teachersCopy": [
       {
-        "properties": {},
+        "contents": {},
         "references": {
           "email": {
             "destination": "mailto:christopher.dorn",
@@ -57,7 +57,7 @@
               },
               "type": "RangeSelector"
             },
-            "type": "Email"
+            "class": "Email"
           }
         },
         "selector": {
@@ -73,12 +73,12 @@
           },
           "type": "RangeSelector"
         },
-        "type": "Teacher"
+        "class": "Teacher"
       }
     ]
   },
   "references": {},
   "status": "Classified",
-  "type": "Teachers",
+  "class": "Teachers",
   "url": "http://www.fernuni-hagen.de/KSW/portale/bapvs/einstieg/lehrende-und-betreuende-im-b-a-pvs/"
 }

@@ -2,11 +2,11 @@
 
 module.exports = {
     "url": "http://myhost/myfolder/mypage",
-    "type": "MyPageType",
+    "class": "MyPageType",
     "status": "Classified",
-    "properties": {
+    "contents": {
         "my_property_1": {
-            "type": "MyProperty1Type",
+            "class": "MyProperty1Type",
             "selector": {
                 "type": "RangeSelector",
                 "startSelector": { "type": "XPathSelector", "value": "//p[1]/span[1]/span[1]","offset": 0 },
@@ -15,7 +15,7 @@ module.exports = {
             "content": "MyProperty1Content",
             "references": {
                 "my_reference_1.1": {
-                    "type": "MyReference1.1Type",
+                    "class": "MyReference1.1Type",
                     "destination": "http://myhost/myfolder/myotherpage1.1",
                     "selector": {
                         "type": "RangeSelector",
@@ -24,7 +24,7 @@ module.exports = {
                     }
                 },
                 "my_reference_1.2": {
-                    "type": "MyReference1.2Type",
+                    "class": "MyReference1.2Type",
                     "destination": "http://myhost/myfolder/myotherpage1.2",
                     "selector": {
                         "type": "RangeSelector",
@@ -33,19 +33,19 @@ module.exports = {
                     }
                 }
             },
-            "properties": {}
+            "contents": {}
         },
         "my_property_2": {
-            "type": "MyProperty2Type",
+            "class": "MyProperty2Type",
             "selector": {
                 "type": "RangeSelector",
                 "startSelector": { "type": "XPathSelector", "value": "//p[2]/span[2]/span[2]","offset": 0 },
                 "endSelector": { "type": "XPathSelector", "value": "//p[2]/span[2]/span[22]", "offset": 120 }
             },
             "content": "MyProperty2Content",
-            "properties": {
+            "contents": {
                 "my_property_2.1": {
-                    "type": "MyProperty2.1Type",
+                    "class": "MyProperty2.1Type",
                     "selector": {
                         "type": "RangeSelector",
                         "startSelector": { "type": "XPathSelector", "value": "//p[21]/span[2]/span[21]","offset": 0 },
@@ -54,7 +54,7 @@ module.exports = {
                     "content": "MyProperty2.1Content",
                     "references": {
                         "my_reference_2.1.1": {
-                            "type": "MyReference1.2Type",
+                            "class": "MyReference1.2Type",
                             "destination": "http://myhost/myfolder/myotherpage1.2",
                             "selector": {
                                 "type": "RangeSelector",
@@ -71,10 +71,10 @@ module.exports = {
                             }
                         }
                     },
-                    "properties": {}
+                    "contents": {}
                 },
                 "my_property_2.2": {
-                    "type": "MyProperty2.2Type",
+                    "class": "MyProperty2.2Type",
                     "selector": {
                         "type": "RangeSelector",
                         "startSelector": { "type": "XPathSelector", "value": "//p[22]/span[2]/span[22]","offset": 0 },
@@ -82,10 +82,10 @@ module.exports = {
                     },
                     "content": "MyProperty2.2Content",
                     "references": {},
-                    "properties": {}
+                    "contents": {}
                 },
                 "my_property_2.3": {
-                    "type": "MyProperty3Type",
+                    "class": "MyProperty3Type",
                     "selector": {
                         "type": "RangeSelector",
                         "startSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[31]","offset": 0 },
@@ -93,12 +93,12 @@ module.exports = {
                     },
                     "content": "MyProperty3Item1Content",
                     "references": {},
-                    "properties": {}
+                    "contents": {}
                 }
             },
             "references": {
                 "my_reference_2.1": {
-                    "type": "MyReference2.1Type",
+                    "class": "MyReference2.1Type",
                     "destination": "http://myhost/myfolder/myotherpage2.1",
                     "selector": {
                         "type": "RangeSelector",
@@ -107,7 +107,7 @@ module.exports = {
                     }
                 },
                 "my_reference_2.2": {
-                    "type": "MyReference2.2Type",
+                    "class": "MyReference2.2Type",
                     "destination": "http://myhost/myfolder/myotherpage2.2",
                     "selector": {
                         "type": "RangeSelector",
@@ -119,7 +119,7 @@ module.exports = {
         },
         "my_property_3": [
             {
-                "type": "MyProperty3Type",
+                "class": "MyProperty3Type",
                 "selector": {
                     "type": "RangeSelector",
                     "startSelector": { "type": "XPathSelector", "value": "//p[31]/span[31]/span[31]","offset": 0 },
@@ -129,7 +129,7 @@ module.exports = {
                 "references": {
                     "my_reference_3Item1": [
                         {
-                            "type": "MyReference3Item1.1Type",
+                            "class": "MyReference3Item1.1Type",
                             "destination": "http://myhost/myfolder/myotherpage3#1.1",
                             "selector": {
                                 "type": "RangeSelector",
@@ -138,7 +138,7 @@ module.exports = {
                             }
                         },
                         {
-                            "type": "MyReference3Item1.2Type",
+                            "class": "MyReference3Item1.2Type",
                             "destination": "http://myhost/myfolder/myotherpage3#1.2",
                             "selector": {
                                 "type": "RangeSelector",
@@ -148,10 +148,10 @@ module.exports = {
                         }
                     ]
                 },
-                "properties": {}
+                "contents": {}
             },
             {
-                "type": "MyProperty3Type",
+                "class": "MyProperty3Type",
                 "selector": {
                     "type": "RangeSelector",
                     "startSelector": { "type": "XPathSelector", "value": "//p[32]/span[32]/span[32]","offset": 0 },
@@ -159,21 +159,21 @@ module.exports = {
                 },
                 "content": "MyProperty3Item2Content",
                 "references": {},
-                "properties": {}
+                "contents": {}
             }
         ],
         "my_property_4": {
-            "type": "MyProperty4Type",
+            "class": "MyProperty4Type",
             "selector": {
                 "type": "RangeSelector",
                 "startSelector": { "type": "XPathSelector", "value": "//p[4]/span[4]/span[4]","offset": 0 },
                 "endSelector": { "type": "XPathSelector", "value": "//p[4]/span[4]/span[44]", "offset": 120 }
             },
             "content": "MyProperty4Content",
-            "properties": {
+            "contents": {
                 "my_property_4.1": [
                     {
-                        "type": "MyProperty4.1Type",
+                        "class": "MyProperty4.1Type",
                         "selector": {
                             "type": "RangeSelector",
                             "startSelector": { "type": "XPathSelector", "value": "//p[411]/span[411]/span[411]","offset": 0 },
@@ -181,10 +181,10 @@ module.exports = {
                         },
                         "content": "MyProperty4.1Item1Content",
                         "references": {},
-                        "properties": {}
+                        "contents": {}
                     },
                     {
-                        "type": "MyProperty4.1Type",
+                        "class": "MyProperty4.1Type",
                         "selector": {
                             "type": "RangeSelector",
                             "startSelector": { "type": "XPathSelector", "value": "//p[412]/span[412]/span[412]","offset": 0 },
@@ -192,7 +192,7 @@ module.exports = {
                         },
                         "content": "MyProperty4.1Item2Content",
                         "references": {},
-                        "properties": {}
+                        "contents": {}
                     }
                 ]
             },
@@ -201,7 +201,7 @@ module.exports = {
     },
     "references": {
         "my_reference_1": {
-            "type": "MyReference1Type",
+            "class": "MyReference1Type",
             "destination": "http://myhost/myfolder/myotherpage1",
             "selector": {
                 "type": "RangeSelector",
@@ -210,7 +210,7 @@ module.exports = {
             }
         },
         "my_reference_2": {
-            "type": "MyReference2Type",
+            "class": "MyReference2Type",
             "destination": "http://myhost/myfolder/myotherpage2",
             "selector": {
                 "type": "RangeSelector",
@@ -219,7 +219,7 @@ module.exports = {
             }
         },
         "my_reference_3": {
-            "type": "MyReference3Type",
+            "class": "MyReference3Type",
             "destination": "http://myhost/myfolder/myotherpage3",
             "selector": {
                 "type": "RangeSelector",
@@ -229,7 +229,7 @@ module.exports = {
         },
         "my_reference_4": [
             {
-                "type": "MyReference4.1Type",
+                "class": "MyReference4.1Type",
                 "destination": "http://myhost/myfolder/myotherpage4#1",
                 "selector": {
                     "type": "RangeSelector",
@@ -238,7 +238,7 @@ module.exports = {
                 }
             },
             {
-                "type": "MyReference4.2Type",
+                "class": "MyReference4.2Type",
                 "destination": "http://myhost/myfolder/myotherpage4#2",
                 "selector": {
                     "type": "RangeSelector",
