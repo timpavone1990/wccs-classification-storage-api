@@ -1,7 +1,6 @@
 {
-  "name": "storage-gateway",
+  "name": "wccs-classification-storage-api",
   "version": "1.0.0",
-  "description": "",
   "private": true,
   "main": "server.js",
   "scripts": {
